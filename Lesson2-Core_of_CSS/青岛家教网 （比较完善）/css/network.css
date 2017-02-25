@@ -1,0 +1,66 @@
+/*
+项目：青岛家教网
+姓名：陈创杰
+时间：2016年11月18日
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    background-color: #0D7792;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 710px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.blue {
+    color: blue;
+}
+
+.header {
+    padding: 0 20px;
+}
+
+.content caption {
+    font-size: 18px;
+    font-weight: bold;
+    caption-side: top;
+    margin-bottom: 20px;
+}
+
+.content {
+    border-collapse: collapse;
+    margin-left: 5%;
+    margin-ight: 5%;
+}
+
+.top_text {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #333333;
+}
+
+.header_text {
+    font-size: 13px;
+    line-height: 150%;
+}
+
+table tr td {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #333333;
+    padding: 3px;
+}

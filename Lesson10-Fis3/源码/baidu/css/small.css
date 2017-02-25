@@ -1,0 +1,505 @@
+/*
+项目：兼容GalaxyS5
+编写：陈创杰
+时间：2016-12-06
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F8F8F8;
+}
+
+
+/*隐藏导航栏*/
+
+header nav,
+footer {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/*中心内容*/
+
+.content {
+    width: 360px;
+    top: 0;
+}
+
+
+/*中心内容下的菜单*/
+
+.weather-outline {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    float: left;
+    padding: 0 6px 0 14px;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+/*用户登录容器*/
+
+header .user {
+    position: absolute;
+    top: 8px;
+    width: 25px;
+    height: 25px;
+    margin-left: 310px;
+}
+
+
+/*用户登录容器*/
+
+header #userinfo {
+    height: 23px;
+    width: 23px;
+    display: block;
+    padding: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+
+/*用户登录容器span标签*/
+
+.user .user-span {
+    background: url(../image/user.jpg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon-weater-default {
+    color: #b7babe;
+    font-size: 28px;
+    position: relative;
+    top: 0;
+    float: left;
+    width: auto;
+    line-height: 28px;
+    margin-left: -1px;
+}
+
+.icon-weather-default {
+    float: left;
+    width: 28px;
+    height: 28px;
+    background: url(../image/yun.png) center center no-repeat;
+    background-size: 28px 28px;
+}
+
+.weather-outline .weather-num {
+    float: left;
+    font-size: 29px;
+    color: #999;
+    padding-left: 4px;
+    padding-right: 3px;
+    font-weight: 300;
+}
+
+.weather-outline .weather-status {
+    top: 5px;
+    position: relative;
+    padding-right: 2px;
+    float: left;
+}
+
+.weather-outline .weather-status p {
+    height: 14px;
+    line-height: 14px;
+    font-size: 10px;
+    color: #999;
+}
+
+
+/*百度图片*/
+
+.search-form img {
+    width: 180px;
+    height: 57px;
+}
+
+
+/*中间的输入内容主容器*/
+
+.content .search-form {
+    top: 26px;
+}
+
+
+/*中间的form表单*/
+
+.content .search-form form {
+    height: 45px;
+}
+
+
+/*中间的输入框*/
+
+.content .search-input {
+    width: 244px;
+}
+
+.content .search-form form .icon-content .search-btn {
+    width: 82px;
+}
+
+
+/*菜单列表*/
+
+.navs {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.ns-swipe {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 14px;
+}
+
+.ns-swipe .ns-swipe-wrap {
+    overflow: hidden;
+    position: relative;
+    height: 70px;
+    background: #F8F8F8;
+}
+
+.ns-swipe .ns-swipe-wrap .ns-swipe-item {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    float: left;
+    margin-left: -10px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: box;
+    display: flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.ns-item {
+    width: 28px;
+    margin-left: 30px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.ns-item .ns-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+.ns-item i.ns-focuss {
+    background-position: 0 -264px;
+}
+
+i.ns-focuss,
+i.ns-news,
+i.ns-novel,
+i.ns-video,
+i.ns-life,
+i.ns-map {
+    background: url(../image/photo.png) no-repeat;
+    background-size: 22px auto;
+}
+
+
+/*新闻图标*/
+
+i.ns-news {
+    background-position: 0 -396px;
+}
+
+.ns-item .ns-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+.ns-item .ns-text {
+    display: block;
+    height: 13px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 13px;
+    line-height: 1;
+    color: #999;
+}
+
+
+/*小说*/
+
+i.ns-novel {
+    background-position: 0 -330px;
+}
+
+
+/*视频*/
+
+i.ns-video {
+    background-position: 0 -462px;
+}
+
+
+/*糯米*/
+
+i.ns-life {
+    background-position: 0 -418px;
+}
+
+
+/*地图*/
+
+i.ns-map {
+    background-position: 0 -308px;
+}
+
+
+/*中心新闻*/
+
+#tab-news {
+    text-align: left;
+    background: #fff;
+    margin-top: 50px;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.tab-news-head {
+    position: relative;
+    top: -43px;
+}
+
+.news-list-wrapper {
+    overflow-x: hidden;
+}
+
+.tab-news-content .news-list-wrapper:first-child > div:first-child {
+    border-top: 0;
+}
+
+.tab-news-content .news-list-wrapper:first-child div:first-child a.inner-item {
+    border-top: none !important;
+}
+
+.tab-news-content .tpl-3 a.inner-item {
+    min-height: 118px;
+}
+
+.tab-news-content .news-item a.inner-item {
+    margin: 0 16px;
+    border-top: 1px solid #f0f0f0;
+    padding: 10px 0 13px;
+    display: block;
+}
+
+.tab-news-content .news-item .text-content {
+    margin-bottom: 3px;
+}
+
+.tab-news-content .news-item h2 {
+    font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.tab-news-content .news-item .hotRec {
+    display: none;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: 3px;
+    margin-left: 6px;
+}
+
+.tab-news-content .tpl-3 a.inner-item {
+    min-height: 118px;
+}
+
+.tab-news-content .news-item .img-wrap {
+    display: inline-block;
+    width: 11.105%;
+    margin-right: 1px;
+    height: 0;
+    padding-top: 8.99%;
+    position: relative;
+    vertical-align: top;
+}
+
+.tab-news-content .news-item .img-wrap img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.pic-content {
+    width: 126%;
+}
+
+.tab-news-content .news-item .news-from {
+    margin-top: 9px;
+    line-height: 12px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.tab-news-content .news-item .news-from span {
+    margin-right: 8px;
+    font-size: 13px;
+    color: #999;
+    display: inline-block;
+}
+
+
+/*底部容器*/
+
+.bottom {
+    width: 360px;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+
+/*底部副容器*/
+
+.mow76 {
+    margin: 0 28px;
+}
+
+
+/*底部副容器的li标签*/
+
+.mow76 li {
+    height: 33px;
+    line-height: 33px;
+    text-align: left;
+}
+
+.mow76 a {
+    position: relative;
+    height: 33px;
+    overflow: hidden;
+    display: block;
+    padding-left: 21px;
+    font-size: 13px;
+    color: #555;
+    background: none no-repeat 0 center;
+    -webkit-background-size: 15px 11px;
+}
+
+.mow76 .baiduIcon a {
+    background-image: url(../image/baidu.png);
+    background-size: 16px 16px;
+}
+
+.mow76 .hotIcon a {
+    background-image: url(../image/HOT.png);
+    background-size: 16px 16px;
+}
+/*底部版权容器*/
+.foot {
+    margin: 10px 28px 0;
+    text-align: center;
+}
+
+.foot div {
+    overflow: hidden;
+    text-align: center;
+}
+
+.foot div a {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 95px;
+    line-height: 34px;
+    color: #666;
+    font-size: 13px;
+}
+
+.foot div a .icon-feedback {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../image/feedback.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.foot .recordcode .icon-i {
+    background: red;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    background: url(../image/icon.png) -624px -98px no-repeat;
+}
+/*底部版权的备案容器*/
+#index-copyright,
+.recordcode {
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 0 0;
+    color: #999;
+}
+
+.recordcode {
+    height: 12px;
+    line-height: 12px;
+    padding: 6px 0 20px;
+}

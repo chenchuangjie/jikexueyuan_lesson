@@ -1,0 +1,818 @@
+/*
+项目:多啦A梦动画
+编写:陈创杰
+时间：2016-11-23
+ */
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+/*主容器*/
+
+.view {
+    width: 500px;
+    height: 500px;
+    background: #999;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+}
+
+
+/*动画容器*/
+
+.dog {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    margin: 15px 82px;
+}
+
+
+/*动画头部*/
+
+.top {
+    position: absolute;
+    width: 325px;
+    height: 312px;
+    border: 0;
+    background: #4686D7;
+    border: 1px solid #000;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*动画大眼睛*/
+
+.ear_one {
+    position: absolute;
+    width: 41px;
+    height: 58px;
+    border: 0;
+    margin-left: 95px;
+    margin-top: 60px;
+    background: #fff;
+    border: 1px solid #000;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*动画大眼睛*/
+
+.ear_two {
+    position: absolute;
+    width: 41px;
+    height: 58px;
+    border: 0;
+    margin-left: 150px;
+    margin-top: 60px;
+    background: #fff;
+    border: 1px solid #000;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*动画眼睛左*/
+
+.eye_three {
+    position: absolute;
+    width: 18px;
+    height: 25px;
+    border: 0;
+    margin-left: 111px;
+    margin-top: 70px;
+    background: coral;
+    border: 1px solid #000;
+    background: #000;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*动画眼睛右*/
+
+.eye_four {
+    position: absolute;
+    width: 18px;
+    height: 25px;
+    border: 0;
+    margin-left: 154px;
+    margin-top: 70px;
+    background: coral;
+    border: 1px solid #000;
+    background: #000;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*动画眼睛左小眼珠*/
+
+.eye_five {
+    position: absolute;
+    width: 8px;
+    height: 10px;
+    border: 0;
+    margin-left: 118px;
+    margin-top: 73px;
+    background: coral;
+    border: 1px solid #000;
+    background: #fff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*动画眼睛右小眼珠*/
+
+.eye_six {
+    position: absolute;
+    width: 6px;
+    height: 11px;
+    border: 0;
+    margin-left: 156px;
+    margin-top: 75px;
+    background: coral;
+    border: 1px solid #000;
+    background: #fff;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*鼻子*/
+
+.mouth {
+    position: absolute;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 131px;
+    margin-top: 115px;
+    background-color: #DB2519;
+}
+
+
+/*鼻子*/
+
+.bazoo {
+    position: absolute;
+    width: 251px;
+    height: 217px;
+    border: 0;
+    margin-left: 37px;
+    margin-top: 91px;
+    background: coral;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-top-left-radius: 51%;
+    border-top-right-radius: 53%;
+    border-bottom-left-radius: 56%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*左边胡子1*/
+
+.beard_one {
+    position: absolute;
+    -webkit-transform: rotate(111deg);
+    -moz-transform: rotate(111deg);
+    -ms-transform: rotate(111deg);
+    -o-transform: rotate(111deg);
+    transform: rotate(111deg);
+    margin-left: 68px;
+    margin-top: 129px;
+    width: 3px;
+    height: 75px;
+    background-color: #000;
+}
+
+
+/*左边胡子2*/
+
+.beard_two {
+    position: absolute;
+    -webkit-transform: rotate(99deg);
+    -moz-transform: rotate(99deg);
+    -ms-transform: rotate(99deg);
+    -o-transform: rotate(99deg);
+    transform: rotate(99deg);
+    margin-left: 68px;
+    margin-top: 157px;
+    width: 3px;
+    height: 75px;
+    background-color: #000;
+}
+
+
+/*左边胡子3*/
+
+.beard_three {
+    position: absolute;
+    -webkit-transform: rotate(83deg);
+    -moz-transform: rotate(83deg);
+    -ms-transform: rotate(83deg);
+    -o-transform: rotate(83deg);
+    transform: rotate(83deg);
+    margin-left: 68px;
+    margin-top: 187px;
+    width: 3px;
+    height: 75px;
+    background-color: #000;
+}
+
+
+/*右边胡子4*/
+
+.beard_four {
+    position: absolute;
+    -webkit-transform: rotate(-120deg);
+    -moz-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+    -o-transform: rotate(-120deg);
+    transform: rotate(-120deg);
+    margin-left: 252px;
+    margin-top: 104px;
+    width: 3px;
+    height: 75px;
+    background-color: #000;
+}
+
+
+/*右边胡子5*/
+
+.beard_five {
+    position: absolute;
+    -webkit-transform: rotate(-109deg);
+    -moz-transform: rotate(-109deg);
+    -o-transform: rotate(-109deg);
+    -ms-transform: rotate(-109deg);
+    transform: rotate(-109deg);
+    margin-left: 269px;
+    margin-top: 130px;
+    width: 3px;
+    height: 75px;
+    background-color: #000;
+}
+
+
+/*右边胡子6*/
+
+.beard_six {
+    position: absolute;
+    -webkit-transform: rotate(-93deg);
+    -moz-transform: rotate(-93deg);
+    -ms-transform: rotate(-93deg);
+    -o-transform: rotate(-93deg);
+    transform: rotate(-93deg);
+    margin-left: 279px;
+    margin-top: 165px;
+    width: 3px;
+    height: 75px;
+    background-color: #000;
+}
+
+
+/*中间嘴唇*/
+
+.beard_seven {
+    position: absolute;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    margin-left: 152px;
+    margin-top: 139px;
+    width: 3px;
+    height: 119px;
+    background-color: #000;
+}
+
+
+/*中间嘴巴*/
+
+.beard_eight {
+    position: absolute;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    width: 206px;
+    height: 83px;
+    margin-left: 61px;
+    margin-top: 168px;
+    border: 5px solid #000;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-left-radius: 57%;
+    border-bottom-right-radius: 83%;
+}
+
+
+/*中间嘴头*/
+
+.beard_nine {
+    position: absolute;
+    -webkit-transform: rotate(-206deg);
+    -moz-transform: rotate(-206deg);
+    -ms-transform: rotate(-206deg);
+    -o-transform: rotate(-206deg);
+    transform: rotate(-206deg);
+    margin-left: 191px;
+    margin-top: 199px;
+    width: 40px;
+    height: 39px;
+    border: 3px solid #000;
+    background-color: #D62E27;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*中间嘴头的线*/
+
+.beard_nine .nine_line {
+    position: absolute;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    margin-left: 18px;
+    margin-top: 0px;
+    width: 3px;
+    height: 20px;
+    background-color: #000;
+}
+
+
+/*头领*/
+
+.led {
+    position: absolute;
+    -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    -o-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+    width: 147px;
+    height: 30px;
+    margin-left: 119px;
+    margin-top: 284px;
+    background: #A21B15;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*头领铛铛*/
+
+.led_f {
+    position: absolute;
+    -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    -o-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+    width: 33px;
+    height: 33px;
+    margin-left: 173px;
+    margin-top: 284px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    background-color: #ECA101;
+}
+
+
+/*头领铛铛中间的圆圆*/
+
+.led_n {
+    position: absolute;
+    -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    -o-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+    width: 8px;
+    height: 8px;
+    margin-left: 184px;
+    margin-top: 297px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    background-color: #ECA101;
+}
+
+
+/*头领铛铛中间的圆圆下的线*/
+
+.led_l {
+    position: absolute;
+    -webkit-transform: rotate(-22deg);
+    -moz-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+    -o-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+    margin-left: 194px;
+    margin-top: 308px;
+    width: 3px;
+    height: 15px;
+    background-color: #000;
+}
+
+
+/*身体*/
+
+.content {
+    position: absolute;
+    -webkit-transform: rotate(-16deg);
+    -moz-transform: rotate(-16deg);
+    -ms-transform: rotate(-16deg);
+    -o-transform: rotate(-16deg);
+    transform: rotate(-16deg);
+    margin-left: 128px;
+    margin-top: 276px;
+    width: 186px;
+    height: 151px;
+    border: 1px solid #000;
+    background: #4686D7;
+    border-bottom-left-radius: 58%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*中间百宝袋*/
+
+.doee {
+    position: absolute;
+    -webkit-transform: rotate(-16deg);
+    -moz-transform: rotate(-16deg);
+    -ms-transform: rotate(-16deg);
+    -o-transform: rotate(-16deg);
+    transform: rotate(-16deg);
+    margin-left: 169px;
+    margin-top: 331px;
+    width: 105px;
+    height: 76px;
+    border: 1px solid #000;
+    background: #fff;
+    border-bottom-left-radius: 58%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*左手*/
+
+.doll {
+    position: absolute;
+    -webkit-transform: rotate(17deg);
+    -moz-transform: rotate(17deg);
+    -ms-transform: rotate(17deg);
+    -o-transform: rotate(17deg);
+    transform: rotate(17deg); 
+    margin-left: 91px;
+    margin-top: 302px;
+    width: 34px;
+    height: 90px;
+    border: 1px solid #000;
+    background: #4686D7;
+    border-bottom-left-radius: 58%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*右手*/
+
+.dorr {
+    position: absolute;
+    -webkit-transform: rotate(-71deg);
+    -moz-transform: rotate(-71deg);
+    -ms-transform: rotate(-71deg);
+    -o-transform: rotate(-71deg);
+    transform: rotate(-71deg);
+    margin-left: 292px;
+    margin-top: 225px;
+    width: 34px;
+    height: 111px;
+    border: 1px solid #000;
+    background: #4686D7;
+    border-bottom-left-radius: 58%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/*左手拳头*/
+
+.doll .dol {
+    position: absolute;
+    -webkit-transform: rotate(17deg);
+    -moz-transform: rotate(17deg);
+    -ms-transform: rotate(17deg);
+    -o-transform: rotate(17deg);
+    transform: rotate(17deg);
+    margin-left: -2px;
+    margin-top: 58px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f5f1f1;
+}
+
+
+/*右手拳头*/
+
+.dorr .dor {
+    position: absolute;
+    -webkit-transform: rotate(17deg);
+    -moz-transform: rotate(17deg);
+    -ms-transform: rotate(17deg);
+    -o-transform: rotate(17deg);
+    transform: rotate(17deg);
+    margin-left: 0px;
+    margin-top: 81px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f5f1f1;
+}
+
+
+/*设置兼容性*/
+
+#dollid,
+.dog,
+.beard_nine {
+    /*webkit设置对象动画的过渡类型*/
+    -webkit-animation-timing-function: ease-in-out;
+    /*moz设置对象动画的过渡类型*/
+    -moz-animation-timing-function: ease-in-out;
+    /*o设置对象动画的过渡类型*/
+    -o-animation-timing-function: ease-in-out;
+    /*ms设置对象动画的过渡类型*/
+    -ms-animation-timing-function: ease-in-out;
+    /*设置对象动画的过渡类型*/
+    animation-timing-function: ease-in-out;
+    /*******************************************/
+    /*webkit设置对象动画的循环次数*/
+    -webkit-animation-iteration-count: infinite;
+    /*moz设置对象动画的循环次数*/
+    -moz-animation-iteration-count: infinite;
+    /*o设置对象动画的循环次数*/
+    -o-animation-iteration-count: infinite;
+    /*ms设置对象动画的循环次数*/
+    -ms-animation-iteration-count: infinite;
+    /*设置对象动画的循环次数*/
+    animation-iteration-count: infinite;
+    /*******************************************/
+    /*webkit设置对象的动画为3D模式*/
+    -webkit-transform-style: preserve-3d;
+    /*moz设置对象的动画为3D模式*/
+    -moz-transform-style: preserve-3d;
+    /*o设置对象的动画为3D模式*/
+    -o-transform-style: preserve-3d;
+    /*ms设置对象的动画为3D模式*/
+    -ms-transform-style: preserve-3d;
+    /*设置对象的动画为3D模式*/
+    transform-style: preserve-3d;
+}
+
+
+/*动画专区*/
+
+#dollid {
+    /*webkit设置对象动画的名称*/
+    -webkit-animation-name: animation;
+    /*moz设置对象动画的名称*/
+    -moz-animation-name: animation;
+    /*o设置对象动画的名称*/
+    -o-animation-name: animation;
+    /*ms设置对象动画的名称*/
+    -ms-animation-name: animation;
+    /*设置对象动画的名称*/
+    animation-name: animation;
+    /*设置对象动画的继续时间*/
+    -webkit-animation-duration: 3s;
+    /*设置对象动画的继续时间*/
+    -moz-animation-duration: 3s;
+    /*设置对象动画的继续时间*/
+    -o-animation-duration: 3s;
+    /*设置对象动画的继续时间*/
+    -ms-animation-duration: 3s;
+    /*设置对象动画的继续时间*/
+    animation-duration: 3s;
+    /*webkit设置对象以某个原点进行转换*/
+    -webkit-transform-origin: 90px;
+    /*moz设置对象以某个原点进行转换*/
+    -moz-transform-origin: 90px;
+    /*o设置对象以某个原点进行转换*/
+    -o-transform-origin: 90px;
+    /*ms设置对象以某个原点进行转换*/
+    -ms-transform-origin: 90px;
+    /*设置对象以某个原点进行转换*/
+    transform-origin: 90px;
+}
+
+.dog {
+    /*webkit设置对象动画的名称*/
+    -webkit-animation-name: dorrids;
+    /*moz设置对象动画的名称*/
+    -moz-animation-name: dorrids;
+    /*o设置对象动画的名称*/
+    -o-animation-name: dorrids;
+    /*ms设置对象动画的名称*/
+    -ms-animation-name: dorrids;
+    /*设置对象动画的名称*/
+    animation-name: dorrids;
+    /*设置对象动画的继续时间*/
+    -webkit-animation-duration: 5s;
+    /*设置对象动画的继续时间*/
+    -moz-animation-duration: 5s;
+    /*设置对象动画的继续时间*/
+    -o-animation-duration: 5s;
+    /*设置对象动画的继续时间*/
+    -ms-animation-duration: 5s;
+    /*设置对象动画的继续时间*/
+    animation-duration: 5s;
+    /*webkit设置对象以某个原点进行转换*/
+    -webkit-transform-origin: -10px;
+    /*moz设置对象以某个原点进行转换*/
+    -moz-transform-origin: 1px 30px;
+    /*o设置对象以某个原点进行转换*/
+    -o-transform-origin: 1px 30px;
+    /*ms设置对象以某个原点进行转换*/
+    -ms-transform-origin: 1px 30px;
+    /*设置对象以某个原点进行转换*/
+    transform-origin: 1px 30px;
+}
+
+.beard_nine {
+    /*webkit设置对象动画的名称*/
+    -webkit-animation-name: beardnine;
+    /*moz设置对象动画的名称*/
+    -moz-animation-name: beardnine;
+    /*o设置对象动画的名称*/
+    -o-animation-name: beardnine;
+    /*ms设置对象动画的名称*/
+    -ms-animation-name: beardnine;
+    /*设置对象动画的名称*/
+    animation-name: beardnine;
+    /*设置对象动画的继续时间*/
+    -webkit-animation-duration: 10s;
+    /*设置对象动画的继续时间*/
+    -moz-animation-duration: 10s;
+    /*设置对象动画的继续时间*/
+    -o-animation-duration: 10s;
+    /*设置对象动画的继续时间*/
+    -ms-animation-duration: 10s;
+    /*设置对象动画的继续时间*/
+    animation-duration: 10s;
+    /*webkit设置对象以某个原点进行转换*/
+    -webkit-transform-origin: 20px 23px;
+    /*moz设置对象以某个原点进行转换*/
+    -moz-transform-origin: 20px 23px;
+    /*o设置对象以某个原点进行转换*/
+    -o-transform-origin: 20px 23px;
+    /*ms设置对象以某个原点进行转换*/
+    -ms-transform-origin: 20px 23px;
+    /*设置对象以某个原点进行转换*/
+    transform-origin: 20px 23px;
+}
+
+
+/*左手动画效果*/
+
+@-webkit-keyframes animation {
+    50% {
+        -webkit-transform: translateX(10px);
+    }
+}
+
+@-moz-keyframes animation {
+    50% {
+        -moz-transform: translateX(10px);
+    }
+}
+
+@-o-keyframes animation {
+    50% {
+        -o-transform: translateX(10px);
+    }
+}
+
+@-ms-keyframes animation {
+    50% {
+        -ms-transform: translateX(10px);
+    }
+}
+
+
+/****************************************************/
+
+
+/*整体动画效果*/
+
+@-webkit-keyframes dorrids {
+    30% {
+        -webkit-transform: translateX(1px) translateY(30px);
+    }
+    50% {
+        -webkit-transform: translateX(30px) translateY(0px);
+    }
+}
+
+@-moz-keyframes dorrids {
+    30% {
+        -moz-transform: translateX(1px) translateY(30px);
+    }
+    50% {
+        -moz-transform: translateX(30px) translateY(0px);
+    }
+}
+
+@-o-keyframes dorrids {
+    30% {
+        -o-transform: translateX(1px) translateY(30px);
+    }
+    50% {
+        -o-transform: translateX(30px) translateY(0px);
+    }
+}
+
+@-ms-keyframes dorrids {
+    30% {
+        -ms-transform: translateX(1px) translateY(30px);
+    }
+    50% {
+        -ms-transform: translateX(30px) translateY(0px);
+    }
+}
+
+
+/****************************************************/
+
+
+/*嘴巴动画效果*/
+
+@-webkit-keyframes beardnine {
+    30% {
+        -webkit-transform: scale(0.88) rotate(-206deg);
+    }
+    50% {
+        -webkit-transform: scale(0.33) translateY(53px) rotate(-206deg);
+    }
+}
+
+@-moz-keyframes beardnine {
+    30% {
+        -moz-transform: scale(0.88) rotate(-206deg);
+    }
+    50% {
+        -moz-transform: scale(0.33) translateY(53px) rotate(-206deg);
+    }
+}
+
+@-o-keyframes beardnine {
+    30% {
+        -o-transform: scale(0.88) rotate(-206deg);
+    }
+    50% {
+        -o-transform: scale(0.33) translateY(53px) rotate(-206deg);
+    }
+}
+
+@-ms-keyframes beardnine {
+    30% {
+        -ms-transform: scale(0.88) rotate(-206deg);
+    }
+    50% {
+        -ms-transform: scale(0.33) translateY(53px) rotate(-206deg);
+    }
+}
+
+
+/****************************************************/

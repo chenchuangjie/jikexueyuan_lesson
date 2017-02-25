@@ -1,0 +1,85 @@
+/*
+项目：十字架
+编写：陈创杰
+时间：2016-11-21 改写
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: -webkit-flex;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -150px;
+}
+
+.box div {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.box div:nth-child(1),
+.box div:nth-child(5) {
+    margin: 0 100px;
+}
+
+.box_top,
+.box_buttom,
+.box_right,
+.box_left {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+}
+
+.img {
+    background: #d1ffe6;
+}
+
+
+/*顶部*/
+
+.box_top {
+    background-color: #336D98;
+}
+
+
+/*底部*/
+
+.box_buttom {
+    background-color: #8C1D2D;
+}
+
+
+/*右边*/
+
+.box_right {
+    background-color: #319C34;
+}
+
+
+/*左边*/
+
+.box_left {
+    background-color: #572A74;
+}

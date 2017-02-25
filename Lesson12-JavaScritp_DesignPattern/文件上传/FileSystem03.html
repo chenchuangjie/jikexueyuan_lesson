@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>创建文件</title>
+    <script>
+    function createFile() {
+        /*获取输入磁盘的内容*/
+        var size = document.getElementById("FileSize").value;
+        window.webkitRequestFileSystem(PERSISTENT, size, function(fs) {
+            var fileName = document.getElementById("FileName").value;
+            fs.root.getFile(fileName, {
+                    create: true
+                },
+                function(fileEntry) {
+                    var text = "文件完整路径：" + fileEntry.fullPath + "<br>";
+                    text += "文件名" + fileEntry.name + "<br>";
+                    document.getElementById("result").innerHTML = text;
+                }
+            )
+        })
+    }
+    </script>
+</head>
+
+<body>
+    <form>
+        文件名：
+        <input type="text" id="FileName" value="test.txt">
+        <br> 文件大小:
+        <input type="text" id="FileSize" value="1024">
+        <br>
+        <input type="button" value="创建文件" onclick="createFile()">
+    </form>
+    <output id="result"></output>
+</body>
+
+</html>

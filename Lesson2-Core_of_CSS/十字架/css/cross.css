@@ -1,0 +1,86 @@
+/*
+项目：十字架css
+编写：陈创杰
+时间:2016年11月18日
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*大容器*/
+.big_box {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+/*中间容器*/
+.box {
+    width: 100px;
+    height: 100px;
+}
+/*内容容器和大容器*/
+.big_box,
+.box_content {
+    display:flex;
+    display:-webkit-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    -webkit-justify-content: center;
+    -moz-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    -moz-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+}
+/*内容容器*/
+.box_content {
+    width: 100px;
+    height: 100px;
+}
+/*顶部DVI*/
+.box_top {
+    width: 100px;
+    height: 100px;
+    margin-top: -100px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #336D98;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+}
+/*底部DVI*/
+.box_buttom {
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #8C1D2D;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+}
+/*右边DVI*/
+.box_right {
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #319C34;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+}
+/*左边DVI*/
+.box_left {
+    width: 100px;
+    height: 100px;
+    margin-left: -100px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #572A74;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+}

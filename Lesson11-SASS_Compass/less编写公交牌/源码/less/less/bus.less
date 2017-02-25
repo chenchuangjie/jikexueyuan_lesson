@@ -1,0 +1,173 @@
+//sass style
+//-----------------------------------
+// 字体
+@fontStack: tahoma,
+arial,
+'Hiragino Sans GB',
+"Microsoft YaHei",
+"微软雅黑";
+//边框颜色
+@fontColor: #3e3e3e;
+// 字体的背景颜色
+@fontBg: #ff983c;
+// 时间表和价钱字体颜色
+@time-bg:#ff8200
+;
+// 路线图的背景颜色
+@line-bg: #5b5b5b;
+// 白色
+@while: #fff;
+// 外框的颜色
+@border-color: #E2DFDF;
+
+/* 巴士的开头和结尾，条用函数 */
+
+.bus-up-end {
+    background-repeat: no-repeat;
+    display: block;
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    left: 5px;
+    top: 0px;
+}
+
+body {
+    font-family: @fontStack;
+}
+
+a {
+    text-decoration: none;
+    color: @fontColor;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.container {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    clear: both;
+    border: 2px solid @border-color;
+    .bus_line {
+        padding-top: 10px;
+    }
+}
+
+
+/* 顶层线路牌 */
+
+.best-info {
+    width: 100%;
+    strong {
+        background-color: @fontBg;
+        display: block;
+        width: 30%;
+        height: 83px;
+        line-height: 83px;
+        text-align: center;
+        font-size: 37px;
+        font-weight: normal;
+        float: left;
+        margin: 0 2%;
+        a {
+            color: @while;
+        }
+    }
+    dt {
+        font-weight: bold;
+        color: #000;
+        font-size: 14px;
+        span {
+            width: 26px;
+            height: 24px;
+            vertical-align: middle;
+            margin: 0 11px;
+            display: inline-block;
+            background-image: url('../image/huhuan.png?__sprite');
+            background-repeat: no-repeat;
+            background-position: left 6px;
+            background-size: 26px 12px;
+        }
+    }
+    dt,
+    dd {
+        line-height: 24px;
+        height: 24px;
+        overflow: hidden;
+    }
+    dd {
+        font-size: 13px;
+        b {
+            color: @time-bg;
+            font-weight: bold;
+        }
+    }
+}
+
+.bus_line {
+    li {
+        width: 27px;
+        height: 150px;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        float: left;
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+        a {
+            display: block;
+            width: 100%;
+            padding-top: 35px;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            border-radius: 3px;
+            height: 98px;
+            &:hover {
+                background-image: url(../image/map.png);
+                background-repeat: no-repeat;
+                background-position: 8px 1px;
+            }
+            &:hover {
+                background-color:@time-bg;
+                color: @while;
+                font-weight: bold;
+                padding-top: 29px;
+                height: 115px;
+            }
+        }
+    }
+    span {
+        display: block;
+        width: 100%;
+        height: 22px;
+        background: url(../image/line.png) repeat-x @line-bg;
+    }
+    .bus-up {
+        a {
+            i {
+                background-image: url('../image/up.png?__sprite');
+                .bus-up-end;
+            }
+        }
+    }
+    .bus-end {
+        a {
+            i {
+                background-image: url('../image/end.png?__sprite');
+                .bus-up-end;
+            }
+        }
+    }
+}

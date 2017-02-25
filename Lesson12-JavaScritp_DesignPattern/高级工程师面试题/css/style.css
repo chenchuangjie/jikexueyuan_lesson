@@ -1,0 +1,42 @@
+/*
+项目：初级前端工程师面试题目
+编写：陈创杰
+时间：2016-12-06
+ */
+
+h2{
+	text-align: center;
+}
+b{
+	color: red;
+}
+
+img{
+	width: 400px;
+	height: 250px;
+}
+/*表格*/
+table{
+	font-size: 15px;
+	border-collapse:collapse;
+	vertical-align: middle;
+}
+table thead tr th{
+	background-color: #D5D5D5;
+}
+table tbody tr td{
+	background-color: #EFEFEF;
+}
+table thead tr th:first-child{
+	width: 200px;
+}
+
+table thead tr th:last-child{
+	width: 600px;
+}
+table tbody tr td:first-child{
+	text-align: center;
+}
+table tbody tr td:last-child{
+	text-align: left;
+}

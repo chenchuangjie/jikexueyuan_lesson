@@ -1,0 +1,130 @@
+/*
+项目：计算器
+编写：陈创杰
+时间：2016-12-12
+ */
+
+
+/*****************************/
+
+
+/*           公共类          */
+
+
+/*****************************/
+
+input {
+    width: 18%;
+    height: 44px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 7px;
+    background: #8B8B8B;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* ***************************** */
+
+
+/* 主容器 */
+
+.main-container {
+    margin-top: 25%;
+    position: relative;
+}
+
+
+/* 计算器容器 */
+
+.panel-body {
+    border-radius: 10px;
+    background: -webkit-linear-gradient(bottom, #DCDCDC, #E5E5E5, #fff);
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+/* 主容器的计算器容器 */
+
+.main-content .content {
+    margin-top: 20px;
+}
+
+
+/* 结果显示框 */
+
+.result-js {
+    width: 100%;
+    height: 76px;
+    font-size: 40px;
+    text-align: right;
+    top: -5px;
+    line-height: 40px;
+    background-color: #FCFDEA;
+    box-shadow: inset 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+/* tan、san、cos */
+.formula{
+    background: #FCFDEA;
+    width: 38%;
+    text-align: center;
+    font-size: 20px;
+}
+/* 数字键 */
+
+.content .num {
+    background: url(../image/calBg1.jpg) repeat-x;
+}
+/* 功能键 */
+.action {
+    color: #F7FAEC;
+    height: 44px;
+    border: 1px solid #875733;
+    background: url(../image/calBg2.jpg) repeat-x;
+}
+/* 特殊运算符 */
+.operator-input {
+    background: url(../image/calBg3.jpg) repeat-x;
+    border: 1px solid #363636;
+    color: #fff;
+    height: 44px;
+} 
+/* 运算符 */
+.subtracting-input {
+    background: url(../image/calBg4.jpg) repeat-x;
+    border: 1px solid #5F6366;
+    height: 44px;
+}
+/* 键盘下的左边容器 */
+.footer-left {
+    margin: 0;
+    padding: 0;
+    margin-right: 6px;
+    float: left;
+    width: 79.7%;
+}
+/* 键盘下的左边容器的input */
+.footer-left input {
+    width: 22.7%;
+    margin-right: 6.5px;
+}
+/* 键盘下的左边容器的零按钮 */
+.footer-left .zero-input {
+    width: 47.6%;
+}
+/* 键盘下的右边边容器 */
+.footer-right {
+    margin: 0;
+    padding: 0;
+    width: 17.5%;
+    height: 110px;
+    float: left;
+    line-height: 103px;
+}
+/* 键盘下的右边容器等于按钮 */
+.footer-right .equal-input {
+    width: 100%;
+    height: 100px;
+    background: url(../image/calBg5.jpg) repeat-x;
+}

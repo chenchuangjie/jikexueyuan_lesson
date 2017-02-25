@@ -1,0 +1,82 @@
+/*
+项目：后台管理
+编写：陈创杰
+时间：2016-12-4
+ */
+
+/*中间内容*/
+
+.content {
+    margin-top: 80px;
+}
+
+
+/*左边导航的头部和内容*/
+
+#main-nav.nav-tabs.nav-stacked > li > a,
+#main-nav.nav-tabs.nav-stacked > li > div > a {
+    padding: 10px 8px;
+    font-size: 12px;
+    margin-right: 0px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #4A515B;
+    display: block;
+    background: #E9E9E9;
+    border: 1px solid #D5D5D5;
+    border-radius: 4px;
+}
+
+
+/*左边侧边导航栏的li标签*/
+
+#main-nav.nav-tabs.nav-stacked > li {
+    margin-bottom: 4px;
+}
+
+/*左边侧边栏的内容伪类*/
+#main-nav.nav-tabs.nav-stacked > li.active > div > a:hover {
+    color: #4A515B;
+    background: #6E7685;
+}
+
+/*左边侧边导航条的头部样式*/
+#main-nav.nav-tabs.nav-stacked > li.active > a,
+#main-nav.nav-tabs.nav-stacked > li > a:hover {
+    color: #FFF;
+    background: #3C4049;
+    border-color: #2B2E33;
+}
+/*右边内容主容器*/
+.widget-content {
+    padding: 20px 15px 15px;
+    background: #FFF;
+    border: 1px solid #D5D5D5;
+}
+
+/*右边内容头部*/
+.widget-header {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #E9E9E9;
+    border: 1px solid #D5D5D5;
+}
+/*右边内容头部的H3字体*/
+.widget-header h3 {
+    position: relative;
+    left: 10px;
+    margin-top: -10px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+    color: #555;
+    line-height: 18px;
+}
+
+.navbar-inner{
+  margin-top: 30px;
+	background-color: #2c2c2c;
+}

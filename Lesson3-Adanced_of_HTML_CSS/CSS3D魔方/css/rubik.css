@@ -1,0 +1,239 @@
+/*
+项目：3D魔方
+编写：陈创杰
+时间：2016-11-23
+ */
+
+.view {
+    width: 180px;
+    height: 180px;
+    margin: 200px auto 0 auto;
+}
+
+
+/*魔方六个面*/
+
+.box .one,
+.box .two,
+.box .three,
+.box .four,
+.box .five,
+.box .six {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+}
+
+
+/*box大盒子*/
+
+.box {
+    /*webkit设置对象动画的名称*/
+    -webkit-animation-name: animatiom;
+    /*moz设置对象动画的名称*/
+    -moz-animation-name: animatiom;
+	/*o设置对象动画的名称*/
+    -o-animation-name: animatiom;
+	/*ms设置对象动画的名称*/
+    -ms-animation-name: animatiom;
+	/*设置对象动画的名称*/
+    animation-name: animatiom;
+
+    /*设置对象动画的继续时间*/
+    -webkit-animation-duration: 3s;
+     /*设置对象动画的继续时间*/
+    -moz-animation-duration: 3s;
+     /*设置对象动画的继续时间*/
+    -o-animation-duration: 3s;
+     /*设置对象动画的继续时间*/
+    -ms-animation-duration: 3s;
+     /*设置对象动画的继续时间*/
+    animation-duration: 3s;
+
+    /*webkit设置对象动画的过渡类型*/
+    -webkit-animation-timing-function: ease-in-out;
+     /*moz设置对象动画的过渡类型*/
+    -moz-animation-timing-function: ease-in-out;
+     /*o设置对象动画的过渡类型*/
+    -o-animation-timing-function: ease-in-out;
+     /*ms设置对象动画的过渡类型*/
+    -ms-animation-timing-function: ease-in-out;
+     /*设置对象动画的过渡类型*/
+  	animation-timing-function: ease-in-out;
+
+    /*webkit设置对象动画的循环次数*/
+    -webkit-animation-iteration-count: infinite;
+    /*moz设置对象动画的循环次数*/
+    -moz-animation-iteration-count: infinite;
+    /*o设置对象动画的循环次数*/
+    -o-animation-iteration-count: infinite;
+    /*ms设置对象动画的循环次数*/
+    -ms-animation-iteration-count: infinite;
+	/*设置对象动画的循环次数*/
+    animation-iteration-count: infinite;
+
+    /*webkit设置对象的动画为3D模式*/
+    -webkit-transform-style: preserve-3d;
+     /*moz设置对象的动画为3D模式*/
+    -moz-transform-style: preserve-3d;
+     /*o设置对象的动画为3D模式*/
+    -o-transform-style: preserve-3d;
+     /*ms设置对象的动画为3D模式*/
+    -ms-transform-style: preserve-3d;
+     /*设置对象的动画为3D模式*/
+     transform-style: preserve-3d;
+
+    /*webkit设置对象以某个原点进行转换*/
+    -webkit-transform-origin: 90px 90px 0;
+    /*moz设置对象以某个原点进行转换*/
+    -moz-transform-origin: 90px 90px 0;
+    /*o设置对象以某个原点进行转换*/
+    -o-transform-origin: 90px 90px 0;
+    /*ms设置对象以某个原点进行转换*/
+    -ms-transform-origin: 90px 90px 0;
+    /*设置对象以某个原点进行转换*/
+    transform-origin: 90px 90px 0;
+    /*
+	-webkit-perspective:138;
+	-webkit-perspective-origin:25% -45px;*/
+}
+
+/*动画效果*/
+@-webkit-keyframes animatiom {
+
+    15% {
+        -webkit-transform: rotateX(-120deg) rotateZ(135deg);
+    }
+    33% {
+        -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        -webkit-transform: rotateY(-225deg) rotateZ(135deg);
+    }
+    66% {
+        -webkit-transform: rotateY(-135deg) rotateX(135deg);
+    }
+    83% {
+        -webkit-transform: rotateY(-90deg);
+    }
+}
+/*动画效果*/
+@-moz-keyframes animatiom {
+
+    15% {
+        -webkit-transform: rotateX(-120deg) rotateZ(135deg);
+    }
+    33% {
+        -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        -webkit-transform: rotateY(-225deg) rotateZ(135deg);
+    }
+    66% {
+        -webkit-transform: rotateY(-135deg) rotateX(135deg);
+    }
+    83% {
+        -webkit-transform: rotateY(-90deg);
+    }
+}
+/*动画效果*/
+@-o-keyframes animatiom {
+
+    15% {
+        -webkit-transform: rotateX(-120deg) rotateZ(135deg);
+    }
+    33% {
+        -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        -webkit-transform: rotateY(-225deg) rotateZ(135deg);
+    }
+    66% {
+        -webkit-transform: rotateY(-135deg) rotateX(135deg);
+    }
+    83% {
+        -webkit-transform: rotateY(-90deg);
+    }
+}
+/*动画效果*/
+@-ms-keyframes animatiom {
+
+    15% {
+        -webkit-transform: rotateX(-120deg) rotateZ(135deg);
+    }
+    33% {
+        -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        -webkit-transform: rotateY(-225deg) rotateZ(135deg);
+    }
+    66% {
+        -webkit-transform: rotateY(-135deg) rotateX(135deg);
+    }
+    83% {
+        -webkit-transform: rotateY(-90deg);
+    }
+}
+
+
+/*魔方中的六个面内小面*/
+
+.one div,
+.two div,
+.three div,
+.four div,
+.five div,
+.six div {
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 15px;
+}
+/*设置面的背景颜色*/
+.one div {
+    background-color: #FE8A0A;
+}
+
+.two div {
+    background-color: #FFFF00;
+}
+
+.three div {
+    background-color: #00469F;
+}
+
+.four div {
+    background-color: #009F41;
+}
+
+.five div {
+    background-color: #D50010;
+}
+
+.six div {
+    background-color: #603912;
+}
+/*设置面的位置*/
+.box .one {
+    -webkit-transform: translateZ(90px);
+}
+
+.box .two {
+    -webkit-transform: rotateX(-90deg) translateZ(90px);
+}
+
+.box .three {
+    -webkit-transform: rotateX(90deg) translateZ(90px);
+}
+
+.box .four {
+    -webkit-transform: rotateY(90deg) translateZ(90px);
+}
+
+.box .five {
+    -webkit-transform: rotateY(-90deg) translateZ(90px);
+}
+
+.box .six {
+    -webkit-transform: rotateY(-180deg) translateZ(90px);
+}

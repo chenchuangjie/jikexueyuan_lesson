@@ -1,0 +1,217 @@
+/* 
+项目：百度图片的瀑布流
+编写：陈创杰
+时间：2016-12-28
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+.header {
+    position: relative;
+    z-index: 35;
+    min-width: 1220px;
+    min-height: 90px;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 8px;
+    background-color: #fff;
+}
+
+.Baidu-img {
+    position: relative;
+    float: left;
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 137px;
+    height: 46px;
+    top: 0;
+}
+
+.Baidu-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 17px;
+    z-index: 9;
+    display: block;
+}
+
+.title-box {
+    position: relative;
+    z-index: 6;
+    padding-top: 12px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.title-box .ubox {
+    width: 100%;
+    height: 30px;
+}
+
+.title-box .ubox li {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.title-box .ubox li a {
+    color: #555;
+    font-size: 14px;
+}
+
+.header .active {
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header .message {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+
+.message ul li {
+    display: inline-block;
+}
+
+.message ul li a {
+    font-size: 12px;
+    color: #555;
+    text-decoration: underline;
+}
+
+.header .input-box {
+    display: inline-block;
+    width: 540px;
+    height: 34px;
+    box-sizing: border-box;
+    border: 1px solid #b8b8b8;
+    border-right: 0;
+    border-bottom: 1px solid #ccc;
+    vertical-align: top;
+}
+
+.btn-box {
+    display: inline-block;
+}
+
+.input-box .s_input {
+    width: 534px;
+    height: 30px;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    background: #fff;
+}
+
+.btn_box {
+    display: inline-block;
+    position: relative;
+    left: -9px;
+    z-index: 0;
+    width: 100px;
+    height: 34px;
+    vertical-align: top;
+}
+
+.btn_box .w_input {
+    width: 100px;
+    height: 34px;
+    border-left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 34px;
+    background: #38f;
+    color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #3d78f4;
+}
+
+.header .search {
+    float: left;
+    padding-left: 35px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.search .pull_title {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #666;
+    height: 26px;
+    font-style: normal;
+    line-height: 26px;
+    font-family: "宋体";
+    background: url(../image/icon.png)-191px -334px no-repeat;
+}
+
+.search a {
+    display: inline-block;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+
+/* 瀑布流图片 */
+
+.box {
+    position: relative;
+    float: left;
+}
+
+.content {
+    padding: 3px;
+}
+
+.content img {
+    width: 250px;
+    height: auto;
+}
+
+.center {
+    background: #f3f2f3;
+    width: 100%;
+}
+
+
+/* 回到顶部 */
+
+.topClass {
+    position: fixed;
+    cursor: pointer;
+    right: 7px;
+    bottom: 122px;
+    width: 37px;
+    height: 38px;
+    background: url(../image/top.png)1px 0 no-repeat;
+}

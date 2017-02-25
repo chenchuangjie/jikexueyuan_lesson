@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/results.css">
+    <title>查询成绩</title>
+</head>
+
+<body>
+    <section class="content-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <main>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="panel-title text-center">
+                                    用户查询
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="group">
+                                    <input type="number" class="result-ls col-md-8 col-md-offset-1" id="count" placeholder="请输入成绩" min="0" max="100" oninput="if(value.length>3)value=value.slice(0,3)" >
+                                    <button class="btn btn-success" onclick="formcontent()">查询</button>
+                                    <p id="content" class="text-center"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/res.js"></script>
+</body>
+
+</html>

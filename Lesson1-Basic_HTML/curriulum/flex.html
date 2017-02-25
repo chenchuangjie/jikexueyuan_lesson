@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒子模型</title>
+    <style>
+    	.rol{
+    		-webkit-column-count:2;
+    		-webkit-column-rule-style:dotted;
+    	}
+    	.center{
+    		width: 400px;
+    		height: 400px;
+    		background: blue;
+    		display:-webkit-box;
+    		-webkit-box-align:center;
+    		-webkit-box-pack:center;
+    	}
+    </style>
+</head>
+
+<body>
+    <div class="rol">
+        <img src="http://image79.360doc.com/DownloadImg/2014/10/1001/45984178_2.jpeg" width="400px;" alt=""> 内容（CONTENT）就是盒子里装的东西； 而填充(PADDING)就是怕盒子里装的东西（贵重的）损坏而添加的泡沫或者其它抗震的辅料； 边框(BORDER)就是盒子本身了；至于边界(MARGIN)则说明盒子摆放的时候的不能全部堆在一起，要留一定空隙保持通风，同时也为了方便取出。在网页设计上，内容常指文字、图片等元素，但是也可以是小盒子（DIV嵌套），与现实生活中盒子不同的是，现实生活中的东西一般不能大于盒子，否则盒子会被撑坏的，而CSS盒子具有弹性，里面的东西大过盒子本身最多把它撑大，但它不会损坏的。 填充只有宽度属性，可以理解为生活中盒子每个HTML标记都可看作一个盒子；
+    </div>
+
+    <hr/>
+	<div class="center">
+		 <img src="http://image79.360doc.com/DownloadImg/2014/10/1001/45984178_2.jpeg" width="200px;" alt=""> 
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新闻测试后台</title>
+    <style type="text/css">
+    	form{
+    		text-align: center;
+    	}
+    </style>
+</head>
+
+<body>
+    <form action="getnew.php">
+        <p>
+            <label for="title">新闻标题</label>
+            <input type="text" id="title" name="title">
+        </p>
+        <p>
+            <label for="img">图片路径</label>
+            <input type="text" id="img" name="img">
+        </p>
+        <p>
+            <label for="src">新闻来源</label>
+            <input type="text" id="src" name="src">
+        </p>
+        <p>
+            <label for="date">新闻日期</label>
+            <input type="date" id="date" name="date">
+        </p>
+        <p>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </p>
+    </form>
+</body>
+
+</html>

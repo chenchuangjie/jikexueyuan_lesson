@@ -1,0 +1,135 @@
+/* 巴士的开头和结尾，条用函数 */
+.bus-up-end {
+  background-repeat: no-repeat;
+  display: block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 5px;
+  top: 0px;
+}
+body {
+  font-family: tahoma, arial, 'Hiragino Sans GB', "Microsoft YaHei", "微软雅黑";
+}
+a {
+  text-decoration: none;
+  color: #3e3e3e;
+}
+a:hover {
+  text-decoration: underline;
+}
+li {
+  list-style: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.container {
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  clear: both;
+  border: 2px solid #e2dfdf;
+}
+.container .bus_line {
+  padding-top: 10px;
+}
+/* 顶层线路牌 */
+.best-info {
+  width: 100%;
+}
+.best-info strong {
+  background-color: #ff983c;
+  display: block;
+  width: 30%;
+  height: 83px;
+  line-height: 83px;
+  text-align: center;
+  font-size: 37px;
+  font-weight: normal;
+  float: left;
+  margin: 0 2%;
+}
+.best-info strong a {
+  color: #ffffff;
+}
+.best-info dt {
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+}
+.best-info dt span {width: 26px;
+  height: 24px;
+  vertical-align: middle;
+  margin: 0 11px;
+  display: inline-block;
+  
+  
+  
+  -webkit-;background-repeat: no-repeat;}
+.best-info dt,
+.best-info dd {
+  line-height: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.best-info dd {
+  font-size: 13px;
+}
+.best-info dd b {
+  color: #ff8200;
+  font-weight: bold;
+}
+.bus_line li {
+  width: 27px;
+  height: 150px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  float: left;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.bus_line li a {
+  display: block;
+  width: 100%;
+  padding-top: 35px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  height: 98px;
+}
+.bus_line li a:hover {
+  background-image: url(/image/map_06bb30a.png);
+  background-repeat: no-repeat;
+  background-position: 8px 1px;
+}
+.bus_line li a:hover {
+  background-color: #ff8200;
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 29px;
+  height: 115px;
+}
+.bus_line span {
+  display: block;
+  width: 100%;
+  height: 22px;
+  background: url(/image/line_adc0ab7.png) repeat-x #5b5b5b;
+}
+.bus_line .bus-up a i {display: block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 5px;
+  top: 0px;background-repeat: no-repeat;}
+.bus_line .bus-end a i {display: block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  left: 5px;
+  top: 0px;background-repeat: no-repeat;}
+.bus_line .bus-up a i{background-position:0px 0px}.bus_line .bus-end a i{background-position:0px -21px}.bus_line .bus-up a i,.bus_line .bus-end a i{background-image: url(/less/bus_z_d18c1f8.png)}.best-info dt span{background-position:0px 4.875px}.best-info dt span{background-size: 26px 19.5px;background-image: url(/less/bus_0.8125_z_2cf61b3.png)}

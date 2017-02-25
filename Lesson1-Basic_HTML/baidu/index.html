@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>百度一下，你就知道</title>
+    <!-- 浏览器左侧显示图标 -->
+    <link rel="shortcut icon" href="image/baidu_icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/baidu.css" />
+</head>
+
+<body>
+    <!-- 主容器 -->
+    <div class="wrapper">
+        <!-- 百度头部 -->
+        <header>
+            <nav>
+                <a href="http://www.nuomi.com/?cid=002540" name="cj_nuomi" class="bnav">糯米</a>
+                <a href="http://news.baidu.com" name="cj_news" class="bnav">新闻</a>
+                <a href="http://www.hao123.com" name="cj_hao123" class="bnav">hao123</a>
+                <a href="http://map.baidu.com" name="cj_map" class="bnav">地图</a>
+                <a href="http://v.baidu.com" name="cj_video" class="bnav">视频</a>
+                <a href="http://tieba.baidu.com" name="cj_tieba" class="bnav">贴吧</a>
+                <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" name="cj_login" class="login">登录</a>
+                <li class="set_li">
+                    <a href="http://www.baidu.com/gaoji/preferences.html" name="cj_news" class="set">设置</a>
+                    <ul class="subs">
+                        <li><a href="javascript:;">搜索设置</a></li>
+                        <li><a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a></li>
+                        <li><a href="javascript:;">关闭预测</a></li>
+                        <li><a href="javascript:;">搜索历史</a></li>
+                    </ul>
+                </li>
+                <li class="set_lis">
+                    <a href="http://www.baidu.com/more/" id="moreid" name="cj_more" class="more">更多产品</a>
+                    <ul class="subs_content">
+                        <li>
+                            <a href="http://music.baidu.com">
+                                <img src="image/content_03.png" alt="音乐">音乐
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://image.baidu.com">
+                                <img src="image/content_04.png" alt="图片">图片
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://zhidao.baidu.com">
+                                <img src="image/content_02.png" alt="知道">知道
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://wenku.baidu.com">
+                                <img src="image/content_05.png" alt="文库"> 文库
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://top.baidu.com">
+                                <img src="image/content_06.png" alt="风云榜">风云榜
+                            </a>
+                        </li>
+                     
+                            <a href="http://www.baidu.com/more/">全部产品>></a>
+                        
+                    </ul>
+                </li>
+            </nav>
+        </header>
+        <!-- 百度头部END -->
+        <!-- 百度内容部分 -->
+        <div class="content">
+            <div class="content_img">
+                <img src="image/logo.png" alt="百度" title="百度一下" />
+            </div>
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <span class="b_input">
+                    <span class="camera"></span>
+                <input type="text" name="wd" class="s_input" maxlength="25" autocomplete="off" />
+                <a href="#" class="a_input"></a>
+                </span>
+                <input type="submit" id="d_btn" class="s_btn" value="百度一下" />
+            </form>
+        </div>
+        <!-- 百度内容部分END -->
+        <!-- 百度底部 -->
+        <footer>
+            <div class="footer_wrapper">
+                <div id="qrcode_left">
+                    <div class="qrcode_item_1">
+                        <img src="image/qrcode1.png" alt="手机百度" title="手机版百度" class="qrcode_img" />
+                        <div class="qrcode_text">
+                            <p><b>手机百度</b></p>
+                            <p><span>快人一步</span></p>
+                        </div>
+                    </div>
+                    <div class="qrcode_item_2">
+                        <img src="image/qrcode2.png" alt="百度糯米" title="糯米" class="qrcode_img" />
+                        <div class="qrcode_text">
+                            <p><b>百度糯米</b></p>
+                            <p><span>一元大餐</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 百度底部左侧二维码容器END -->
+                <!-- 百度底部右侧信息容器 -->
+                <div class="fonter_right">
+                    <p id="lh">
+                        <a href="http://www.baidu.com/cache/sethelp/help.html" id="self">把百度设为主页</a>
+                        <a href="http://home.baidu.com">关于百度</a>
+                        <a href="http://home.baidu.com">About&nbsp;&nbsp;Baidu</a>
+                        <a href="http://e.baidu.com/?refer=888">百度推广</a>
+                    </p>
+                    <p id="cp">
+                        &copy;2016 Baidu
+                        <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                        <a href="http://jianyi.baidu.com/">意见反馈</a> &nbsp;京ICP证030173号&nbsp;
+                        <span class="footer_icon"></span>
+                    </p>
+                    <a id="cl" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">
+                        <span class="footer_icon"></span>京公网安备11000002000001号</a>
+                </div>
+                <!-- 百度底部右侧信息容器END -->
+            </div>
+        </footer>
+        <!-- 百度底部END -->
+    </div>
+    <!-- 主容器END -->
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+/*
+项目：实战盒子模型与弹性盒模型
+编写：陈创杰
+时间：2016-11-21
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/**********************************/
+
+
+/*           正常盒模型           */
+
+
+/**********************************/
+
+
+/*鞋子*/
+
+.shoes {
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+    background-color: orange;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+.big_box {
+    padding: 50px;
+    text-align: center;
+}
+
+
+/*盒子*/
+
+.boxshoes {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 5px 50px;
+    display: inline-block;
+    border: 5px solid red;
+    background-color: #00bcd4;
+}
+
+
+/**********************************/
+
+
+/*           怪异盒模型           */
+
+
+/**********************************/
+
+
+/*鞋子*/
+
+.shoess {
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+    background-color: orange;
+}
+
+
+/*盒子*/
+
+.boxshoess {
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    margin: 5px 50px;
+    border: 5px solid red;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #00bcd4;
+}
+
+
+/**********************************/
+
+
+/*           弹性盒模型           */
+
+
+/**********************************/
+
+.img_box {
+    width: 200px;
+}
+
+.elastic {
+	-webkit-column-width: 250px;
+    column-width: 250px;
+    -webkit-column-count: 4;
+    margin-bottom: 10px;
+    -webkit-column-rule-style: dotted;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/**********************************/
+
+
+/*     旧版弹性盒子居中布局       */
+
+
+/**********************************/
+
+.center {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    height: 300px;
+    width: 300px;
+    margin: 10px auto;
+    background-color: orange;
+}
+
+
+/**********************************/
+
+
+/*           排序(flex)           */
+
+
+/**********************************/
+
+.first {
+    height: 200px;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+    background-color: orange;
+}
+
+.second {
+    height: 200px;
+    -webkit-flex: 1;
+    -webkit-order: 2;
+    background-color: aquamarine;
+}
+
+.three {
+    height: 200px;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+    background-color: #e3ff7f;
+}
+
+.con {
+    display: -webkit-flex;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: green;
+}
+
+
+/**********************************/
+
+
+/*          box-orient            */
+
+
+/**********************************/
+
+.firsts {
+    height: 200px;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+    background-color: orange;
+}
+
+.seconds {
+    height: 200px;
+    -webkit-flex: 1;
+    -webkit-order: 2;
+    background-color: aquamarine;
+}
+
+.threes {
+    height: 200px;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+    background-color: #e3ff7f;
+}
+
+.cons {
+    display: -webkit-box;
+    width: 300px;
+    height: 600px;
+    -webkit-box-orient: vertical;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: green;
+}
+
+
+/**********************************/
+
+
+/*         flex-direction         */
+
+
+/**********************************/
+
+.one {
+    height: 200px;
+    -webkit-flex: 1;
+    background-color: orange;
+}
+
+.two {
+    height: 200px;
+    -webkit-flex: 1;
+    background-color: aquamarine;
+}
+
+.tr {
+    height: 200px;
+    -webkit-flex: 1;
+    background-color: #e3ff7f;
+}
+
+.con_content {
+    display: -webkit-flex;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: green;
+    margin-bottom: 20px;
+    -webkit-flex-direction: column;
+}

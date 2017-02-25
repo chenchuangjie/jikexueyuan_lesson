@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transform</title>
+	<style>
+		.transform{
+			width: 1000px;
+			margin:100px auto;
+			background-color: #fdfdfd;
+		}
+
+		.transform:after{
+			clear: both;
+			content: " ";
+			display: block;
+			overflow: hidden;
+		}
+		.transform > p{
+			width: 100px;
+			float: left;
+			border: 1px #999 solid;
+			margin-right: 9px;
+			text-align: center;
+			padding-bottom: 10px;
+		}
+
+		.transform > p strong{
+			display: block;
+			background-color: #eee;
+			line-height: 28px;
+			font-size: 20px;
+			font-family: "Microsoft Yahei";
+			color: #333;
+			margin-bottom: 10px;
+		}
+		.transform > p span{
+			display: block;
+			width: 100px;
+			height: 100px;
+			border: 1px #ccc solid;
+			margin: 0 auto;
+			background-color: #09f; 
+		}
+	</style>
+</head>
+<body>
+	<div class="transform">
+		<p>
+			<strong>旋转（rotate）</strong>
+			<span class="ratate"></span>
+		</p>
+		<p>
+			<strong>移动（translate）</strong>
+			<span class="translate"></span>
+		</p>
+		<p>
+			<strong>缩放（scale）</strong>
+			<span class="ratate"></span>
+		</p>
+		<p>
+			<strong>扭曲（skew）</strong>
+			<span class="ratate"></span>
+		</p>
+
+	</div>
+</body>
+</html>

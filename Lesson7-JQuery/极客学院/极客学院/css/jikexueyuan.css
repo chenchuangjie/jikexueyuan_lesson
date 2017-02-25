@@ -1,0 +1,526 @@
+/*
+项目：极客学院
+编写：陈创杰
+时间：2016-12-14
+ */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+li{
+	list-style: none;
+}
+
+input,button,textarea{
+	outline;none;
+}
+
+a{
+	text-decoration: none;
+}
+/***公用的类****/
+.w-1000{
+	width: 1000px;
+	margin:0 auto;
+}
+.right-border{
+	border-right:1px solid #333;
+}
+
+/****************/
+.cf::after{
+	content: '';
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+}
+/* 头部 */
+/*导航栏*/
+
+header {
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    left: 60px;
+    background: #fff;
+    border: 1px solid #ececec;
+}
+
+.relative {
+    position: relative;
+}
+
+.general {
+    width: 1000px;
+    margin: 0 auto;
+    clear: both;
+}
+
+header .logo {
+    width: 109px;
+    height: 60px;
+    margin-right: 60px;
+    float: left;
+    display: inline-block;
+}
+
+.logo-img {
+    width: 109px;
+    height: 40px;
+    border: 0 none;
+    margin-top: 10px;
+}
+
+section {
+    display: block;
+}
+
+header nav {
+    height: 60px;
+    float: left;
+    display: inline-block;
+}
+
+.header-nav {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header-nav li {
+    float: left;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 50px;
+    position: relative;
+    list-style-type: none;
+}
+
+.home {
+    color: #3EB85F;
+}
+
+header nav .submenu {
+    display: none;
+    opacity: 1;
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: 0;
+    font-size: 11px;
+    color: #666;
+    width: 280px;
+    background: #fff;
+}
+
+.vip-course i,
+.vip-lesson i {
+    background: url(../image/allicon.png)0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px!important;
+}
+
+.vip-course span,
+.vip-lesson span {
+    float: right;
+    text-align: right;
+    color: #BCBCBC;
+}
+
+.vip-course .xlkc-icon {
+    background: url(../image/xlkc2.png) 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 12px 12px;
+}
+
+.header-nav .vip-course .kck-icon {
+    background-position: 0 -13px;
+}
+
+.header-nav .vip-course .zylj-icon {
+    background-position: -44px 0px;
+}
+
+.header-nav .vip-course .zstxt-icon {
+    background-position: -31px -13px;
+}
+
+.header-nav .vip-course .xlkc-icon {
+    background-position: 0 0;
+}
+
+.header-nav .vip-course .kcbq-icon {
+    background-position: 0 -13px;
+}
+
+.header-nav .vip-course .vip-icon {
+    background-position: -14px 0;
+}
+
+
+/*极客学院的下列图标*/
+
+.header-nav .vip-lesson .jswd-icon {
+    background-position: 0 -24px;
+}
+
+.header-nav .vip-lesson .Wiki-icon {
+    background-position: -28px -24px;
+}
+
+.header-nav .vip-lesson .sq-icon {
+    background-position: 0 2px;
+}
+
+.header-nav .vip-lesson .zygx-icon {
+    background-position: -28px 0;
+}
+
+header img,
+header ul,
+header nav,
+header div,
+header span,
+header h3,
+header a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    font-family: "Microsoft Yahei";
+}
+
+header nav a {
+    color: #333;
+}
+
+h3 {
+    height: 28px;
+    line-height: 28px;
+    font-weight: 300;
+    margin: 10px 0;
+    padding: 0 15px;
+    background: #fafafa;
+    font-size: 12px;
+}
+
+header .header-nav .submenu a {
+    display: block;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+.school-list i {
+    background: url(../image/allicon.png)0 0 no-repeat;
+    background-size: 64px 64px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px!important;
+}
+
+.school-list i.python-icon,
+.school-list i.go-icon,
+.school-list i.ios-icon {
+    background: url(../image/allicon3.png)0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 16px 148px;
+}
+
+header .header-nav .submenu .web-icon {
+    background-position: -15px, -27px;
+}
+
+header .header-nav .school-list .python-icon {
+    background-position: -2px -2px;
+}
+
+header .header-nav .school-list .go-icon {
+    background-position: -2px -38px;
+}
+
+header .header-nav .school-list .ios-icon {
+    background-position: -2px -82px;
+}
+
+header .header-nav li:hover {
+    color: #35b558;
+    cursor: pointer;
+}
+
+header .header-nav li:hover .icon {
+    transform: rotate(45deg);
+    border-top: 1px solid #35b558;
+    border-left: 1px solid #35b558;
+    transition: transform .3s ease-out;
+}
+
+header .header-nav .zy-shool:hover .submenu,
+header .header-nav .hy-course:hover .vip-course,
+header .header-nav .jkxy-school:hover .vip-lesson {
+    display: block;
+}
+
+header .header-nav .submenu a:hover {
+    color: #35b558;
+}
+
+header .header-nav .vip-course a:hover {
+    color: #35b558;
+    background-color: #FAFAFA;
+}
+
+header .header-nav .vip-lesson a:hover {
+    color: #35b558;
+    background-color: #FAFAFA;
+}
+
+
+/*下列图标*/
+
+.icon {
+    width: 8px;
+    height: 8px;
+    margin-left: 2px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    display: inline-block;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform-origin: 4px 4px;
+}
+
+
+/*右侧图标*/
+
+.icon-box {
+    float: right;
+    width: 200px;
+    height: 60px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.icon-box span {
+    height: 60px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.search-icon {
+    background: url(../image/search-icon.png)0 0 no-repeat;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    background-position: 0, 0;
+    background-size: 17px 17px;
+}
+
+.app-icon {
+    background: url(../image/app-icon.png)0 0 no-repeat;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    background-position: 0, 0;
+    background-size: 17px 17px;
+}
+
+.login-icon {
+    background: url(../image/login-icon.png)0 0 no-repeat;
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    background-position: 0, 0;
+    background-size: 17px 17px;
+}
+
+.loginlist .submenu {
+    display: none;
+    padding: 10px 0;
+    background-color: #fff;
+    position: absolute;
+    width: 120px;
+    z-index: 1200;
+    top: 58px;
+    right: -50px;
+}
+
+.icon-box .app-icon:hover .submenu {
+    display: block;
+}
+
+.icon-box .login-icon:hover .submenu {
+    display: block;
+}
+
+.icon-box .login-icon:hover .submenu {
+    display: block;
+}
+
+header .header-box .icon-box .app-icon .submenu {
+    top: 59px;
+    width: 120px;
+    padding: 10px 0;
+    z-index: 1200;
+    position: absolute;
+    background-color: #fff;
+    right: -57px;
+    font-size: 12px;
+    text-align: center;
+}
+
+header .header-box .icon-box .login-icon .submenu {
+    top: 59px;
+    width: 120px;
+    padding: 10px 0;
+    z-index: 1200;
+    position: absolute;
+    background-color: #fff;
+    right: -10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.header-box .icon-box .login-icon .submenu .top-icon {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 96px;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    display: inline-block;
+    background: #fff;
+}
+
+.header-box .icon-box .app-icon .submenu .top-icon {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 52px;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    display: inline-block;
+    background: #fff;
+}
+
+.header-box .icon-box .app-icon .submenu img {
+    width: 100%;
+}
+
+.header-box .icon-box .loginlist .submenu dd {
+    height: 30px;
+    line-height: 30px;
+}
+
+.header-box .icon-box .loginlist .submenu a {
+    color: #333;
+}
+
+.header-box .icon-box .loginlist .submenu a:hover {
+    color: #35b558;
+}
+
+.header-box .icon-box .loginlist .submenu dd:hover {
+    color: #35b558;
+    background-color: #fafafa;
+}
+
+
+/*  */
+#lessons-nav{
+	position: relative;
+	margin-top: 20px;
+	z-index: 0;
+}
+#lessons-nav a{
+	color: #333;
+}
+#lessons-nav a:hover{
+	color: #35b558;
+}
+
+#lessons-nav > div{
+	height: 370px;
+	// float: left;
+}
+
+#lessons-nav .lesson-lists{
+	width: 210px;
+}
+
+#lessons-nav .lesson-lists li{
+	height: 37px;
+	line-height: 25px;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	border:1px solid #eee;
+	margin-top: -1px;
+	cursor: pointer;
+}
+
+#lessons-nav .lesson-lists li:nth-child(1){
+	border-top:2px solid #35b558;
+}
+
+#lessons-nav .lesson-lists li:hover{
+	border-left: 2px solid #35b558;
+	border-right:1px solid #fff;
+}
+
+#lessons-nav .lesson-lists li:hover > span{
+	display: none;
+}
+#lessons-nav .lesson-lists li > span{
+	display: inline-block;
+	float: right;
+}
+#lessons-nav .lesson-lists li:hover > .lesson-lists-nav{
+	display: block;
+}
+#lessons-nav .lesson-lists-nav{
+	position: absolute;
+	top: 0;
+	left: 210px;
+	width: 500px;
+	min-height: 370px;
+	padding: 10px;
+	margin-left: -1px;
+	border:1px solid #eee;
+	// display: none;
+}
+#lessons-nav .lesson-lists-nav dt{
+	line-height: 25px;
+	border-bottom: 1px solid #eee;
+}
+#lessons-nav .lesson-banner{
+	width: 560px;
+	width: 210px;
+}

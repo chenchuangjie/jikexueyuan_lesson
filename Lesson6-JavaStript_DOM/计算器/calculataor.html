@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS版计算器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/calculataor.css">
+    <!--[if IE]>
+    <script src="./js/html5shiv.js" ></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 主容器 -->
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <main class="main-container">
+                        <div class="panel panel-default">
+                            <!-- 容器头部 -->
+                            <!--    <div class="panel-heading">
+                                <h3 class="panel-title text-center">
+                                        计算器
+                                </h3>
+                            </div> -->
+                            <!-- 容器头部END -->
+                            <!-- 内容 -->
+                            <div class="panel-body">
+                                <form name="calculator">
+                                    <!-- 结果框 -->
+                                    <input class="inputscreen result-js" name="inputScreen" value="0" onfocus="this.blur();" disabled id="Screen" />
+                                    <a href=""></a>
+                                    <!-- 结果框END -->
+                                    <!-- 数字键盘 -->
+                                    <div class="content">
+                                        <input type="button" value="X" id="del" class="action" />
+                                        <input type="button" value="全清" id="clearscreen" class="action" />
+                                        <input type="button" value="清屏" id="clearnote" class="action" />
+                                        <input value="请输入算式" name="formula" class="formula" id="formulaScreen" disabled>
+                                        <input type="button" value="tan" id="tan" class="operator-input">
+                                        <input type="button" value="sin" id="sin" class="operator-input">
+                                        <input type="button" value="cos" id="cos" class="operator-input">
+                                        <input type="button" value="+/-" id="negative" class="operator-input" />
+                                        <input type="button" value="1/x" id="oRec" class="operator-input" />
+                                        <input type="button" value="7" onclick="results(7)" class="num" />
+                                        <input type="button" value="8" onclick="results(8)" class="num" />
+                                        <input type="button" value="9" onclick="results(9)" class="num" />
+                                        <input type="button" value="÷" onclick="res(4)" class="subtracting-input" class="num" />
+                                        <input type="button" value="%" onclick="Special_operator(5)" class="operator-input" />
+                                        <input type="button" value="4" onclick="results(4)" class="num" />
+                                        <input type="button" value="5" onclick="results(5)" class="num" />
+                                        <input type="button" value="6" onclick="results(6)" class="num" />
+                                        <input type="button" value="x" onclick="res(3)" class="subtracting-input" />
+                                        <input type="button" value="&radic;" onclick="Special_operator(6)" class="operator-input" />
+                                        <div class="footer-left col-md-6">
+                                            <input type="button" value="1" onclick="results(1)" class="num" />
+                                            <input type="button" value="2" onclick="results(2)" class="num" />
+                                            <input type="button" value="3" onclick="results(3)" class="num" />
+                                            <input type="button" value="-" onclick="res(2)" class="subtracting-input" />
+                                            <input type="button" value="0" onclick="results(0)" class="zero-input num" />
+                                            <input type="button" value="." id="dot" class="num" />
+                                            <input type="button" value="+" onclick="res(1)" class="subtracting-input"/>
+                                        </div>
+                                        <div class="footer-right col-md-3">
+                                            <input type="button" value="=" onclick="equal()" class="equal-input operator-input" />
+                                        </div>
+                                    </div>
+                                    <!-- 数字键盘END -->
+                                </form>
+                            </div>
+                            <!-- 内容END -->
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>`1
+    </div>
+    <!-- 主容器END -->
+    <script src="js/colculataor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+// reset
+// 2016年11月16日
+// 编写：创杰
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-width: 810px;
+    min-height: 600px;
+    position: relative;
+    height: 100%;
+    font: 13px arial;
+}
+
+
+/*头部*/
+
+header {
+    overflow: hidden;
+    margin: 19px 0 5px;
+}
+
+
+/*头部导航的nav*/
+
+header nav {
+    width: 518px;
+    float: right;
+}
+
+
+/*头部导航的nav中的a标签*/
+
+header nav a {
+    color: #333;
+    text-align: center;
+    margin: 0 10px;
+    line-height: 24px;
+}
+
+
+/*头部导航的贴吧*/
+
+.bnav {
+    font-weight: bold;
+}
+
+
+/*头部导航的登录和设置*/
+
+.login,
+.set {
+    font-weight: normal;
+}
+
+
+/**/
+
+.set_li {
+    height: 50px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+/*设置的ul*/
+
+.subs {
+    width: 30px;
+    position: absolute;
+    display: none;
+    z-index: 20;
+    text-decoration: none;
+}
+
+
+/*顶部设置的lu里的li标签*/
+
+.subs li {
+    width: 80px;
+    list-style-type: none;
+}
+
+
+/*顶部设置的lu里的li标签a标签*/
+
+.set_li .subs li a {
+    display: block;
+    text-decoration: none;
+}
+
+
+/*顶部设置的鼠标移到位置*/
+
+.subs li a:hover {
+    color: #FFF;
+    background-color: #38f;
+}
+
+
+/*顶部设置的鼠标移到的下列菜单*/
+
+.set_li:hover .subs {
+    right: 140px;
+    top: 50px;
+    display: block;
+    text-decoration: none;
+}
+
+
+/*头部导航的登录和设置*/
+
+.more {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/*中间内容*/
+
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+.content_img {
+    display: block;
+}
+
+
+/*中间内容的百度图片*/
+
+.content img {
+    padding-bottom: 15px;
+    width: 270px;
+    height: 129px;
+}
+
+.b_input {
+    width: 540px;
+    height: 36px;
+    background: red;
+    display: inline-block;
+    vertical-align: top;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #b6b6b6;
+}
+
+
+/*中间内容的输入框鼠标划过*/
+
+.b_input:hover {
+    border: 1px solid #999;
+}
+
+
+/*中间内容的输入框选中*/
+
+.b_input:active {
+    border: 1px solid blue;
+}
+
+
+/*中间内容的输入框*/
+
+.s_input {
+    position: relative;
+    width: 526px;
+    height: 22px;
+    margin: 6px 0 0 7px;
+    padding: 0;
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+}
+
+#d_btn:hover {
+    background: #2d7ff9;
+    cursor: pointer;
+}
+
+
+/*中间内容的的百度一下按钮*/
+
+.s_btn {
+    z-index: 0;
+    width: 100px;
+    height: 38px;
+    color: #fff;
+    margin-left: -10px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: top;
+}
+
+.a_input {
+    width: 32px;
+    height: 32px;
+    display: one;
+    top: 0px;
+    right: 0px;
+}
+
+.camera {
+    z-index: 1;
+    position: absolute;
+    right: 11px;
+    top: 25%;
+    height: 16px;
+    width: 18px;
+    background-image: url(../image/camera.png);
+}
+
+.camera:hover {
+    background-position: 0 -20px;
+}
+
+
+/*底部*/
+
+footer {
+    bottom: 23px;
+    width: 100%;
+    height: 100px;
+    text-align: left;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+/*底部容器*/
+
+.footer_wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+/*底部容器的左侧容器*/
+
+#qrcode_left {
+    display: inline-block;
+}
+
+
+/*底部容器的左侧容器的百度手机*/
+
+#qrcode_left .qrcode_item_2 {
+    margin-left: 33px;
+}
+
+
+/*底部左侧容器 和图片*/
+
+#qrcode_left .qrcode_img {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+
+/*底部右侧容器*/
+
+.fonter_right {
+    top: -2px;
+    font-size: 8px;
+    margin-left: 33px;
+    line-height: 0px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+
+
+/*底部右侧容器的a标签*/
+
+.fonter_right a {
+    color: #999;
+}
+
+
+/*底部二维码两个容器*/
+
+.qrcode_item_1,
+.qrcode_item_2 {
+    float: left;
+}
+
+
+/*底部二维码图片*/
+
+.qrcode_img {
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+
+/*底部二维码信息容器*/
+
+.qrcode_text {
+    float: left;
+    color: #999;
+    line-height: 10px;
+    margin: 0 0 0 10px;
+}
+
+
+/*底部二维码信息P标签*/
+
+.qrcode_text p {
+    text-align: left;
+}
+
+
+/*底部二维码信息b标签*/
+
+.qrcode_text b {
+    color: #666;
+    font-weight: 700;
+}
+
+
+/*底部二维码信息span标签*/
+
+.qrcode_text span {
+    letter-spacing: 1px;
+}
+
+
+/*底部第一组信息和把百度设置首页*/
+
+#lh #self {
+    margin-left: -5px;
+}
+
+
+/*底部第一组容器和*/
+
+#lh a,
+#jgwab a {
+    margin-left: 25px;
+}
+
+
+/*底部第二组信息*/
+
+#cp {
+    color: #999;
+}
+
+
+/*底部的P标签*/
+
+footer p {
+    text-align: center;
+}
+
+
+/*第二组信息备案图标*/
+
+#cp .footer_icon {
+    top: 3px;
+    margin-right: 6px;
+    position: relative;
+    background-position: -600px -96px;
+}
+
+
+/*第三组信息备案图标*/
+
+#cl .footer_icon {
+    top: 3px;
+    margin-right: 6px;
+    position: relative;
+    background-position: -623px -96px;
+}
+
+
+/*备案图标*/
+
+.footer_icon {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    margin-left: 6px;
+    background: url(../image/icon.png);
+}
+
+
+/*更多产品的li*/
+
+.subs_content {
+    display: none;
+    position: absolute;
+    text-decoration: none;
+}
+
+
+/*更多产品容器*/
+
+.set_lis {
+    color: #000;
+    background: #38f;
+    border: 2px solid #38f;
+    display: inline-block;
+}
+
+
+/*更多产品的下列菜单*/
+
+.set_lis:hover .subs_content {
+    right: 9px;
+    top: 35px;
+    display: block;
+    text-decoration: none;
+}
+
+
+/*更多产品的Ul容器的li*/
+
+.subs_content li {
+    width: 88px;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 30px;
+    background: #F9F9F9;
+    list-style-type: none;
+}
+
+
+/*更多产品的a标签*/
+
+.subs_content li a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 45px;
+    margin: 0 auto;
+}
+
+
+/*顶部按钮鼠标经过*/
+
+.bnav:hover,
+.login:hover,
+.set:hover {
+    color: blue;
+}

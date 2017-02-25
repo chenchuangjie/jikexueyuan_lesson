@@ -1,0 +1,30 @@
+/*
+项目：查询成绩
+编写：陈创杰
+时间：2016-12-10
+ */
+
+.content-main{
+	margin-top: 10%;
+}
+.logo{
+	width: 100px;
+	height: 100px;
+}
+.result-ls{
+	height: 34px;
+	line-height: 34px;
+}
+
+.btn{
+	border-radius: 0px;
+}
+.content-main .panel-body{
+	height: auto;
+}
+p{
+	color: #ce0000;
+}
+.panel-body{
+	height: 126px;
+}

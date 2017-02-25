@@ -1,0 +1,133 @@
+/*
+项目：青岛家教网
+姓名：陈创杰
+时间：2016年11月18日
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    background-color: #0D7792;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+/*主容器*/
+
+.box {
+    width: 710px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+/*标配类*/
+
+.blue {
+    color: blue;
+    width: 500px;
+}
+
+
+/*标准红色*/
+
+.redcolor {
+    color: #ff0000;
+}
+
+
+/*a标签*/
+
+a {
+    text-decoration: none;
+    color: #FF0099;
+}
+
+
+/*注册 登录 收藏本站的鼠标经过的效果*/
+
+a:hover {
+    color: #c5bfc3;
+}
+
+
+/*已访问*/
+
+a:visited {
+    background-color: blue;
+}
+
+
+/*头部*/
+
+.header {
+    padding: 0 20px;
+    width: 710px;
+}
+
+.code {
+    align: left;
+    background-color: #eeeeee;
+}
+
+
+/*表格总标题*/
+
+.content caption {
+    font-size: 18px;
+    font-weight: bold;
+    caption-side: top;
+    margin-bottom: 20px;
+}
+
+
+/*内容容器*/
+
+.content {
+    border-collapse: collapse;
+    margin-left: 5%;
+    margin-ight: 5%;
+    width: 90%;
+    align: center;
+}
+
+/*表格小项目标题*/
+
+.header_text {
+    font-size: 13px;
+    line-height: 150%;
+}
+
+
+/*表格左边*/
+
+.lefttable {
+    text-align: right;
+}
+
+
+/*表格td*/
+
+table tr td {
+    font-size: 12px;
+    line-height: 150%;
+    text-decoration: none;
+    color: #333333;
+    padding: 3px;
+}
+
+label {
+    display: inline-block;
+}
+
+#subjects{
+    align:center;   
+    width: 100%;
+}

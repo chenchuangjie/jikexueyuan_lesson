@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS版计算器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/calculataor.css">
+</head>
+
+<body>
+    <!-- 主容器 -->
+    <div class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <main class="main-container">
+                        <div class="panel panel-default">
+                            <!-- 容器头部 -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">
+                        				计算器
+                        		</h3>
+                            </div>
+                            <!-- 容器头部END -->
+                            <!-- 内容 -->
+                            <div class="panel-body">
+                            	<!-- 结果框 -->
+                                <div class="result">
+                                    <input type="text" id="result-count" name="resultcount" value="" class="result-js" disabled />
+                                </div>
+                                <a href=""></a>
+                                <!-- 结果框END -->
+                                <!-- 数字键盘 -->
+                                <div class="content">
+                                    <button class="btn btn-default" onclick="inputPCB(this)">null</button>
+                                    <button class="btn btn-default" onclick="inputPCB(this)" value="C">C</button>
+                                    <button class="btn btn-default" onclick="inputPCB(this)" value="Del">Del</button>
+                                    <button class="btn btn-default" onclick="resultsOper(this)" id="/" value="/">÷</button>
+                                    <button class="btn btn-default" onclick="results(this)" value="7">7</button>
+                                    <button class="btn btn-default" onclick="results(this)" value="8">8</button>
+                                    <button class="btn btn-default" onclick="results(this)" value="9">9</button>
+                                    <button class="btn btn-default" onclick="resultsOper(this)" value="*">×</button>
+                                    <button class="btn btn-default" onclick="results(this)"  value="4">4</button>
+                                    <button class="btn btn-default" onclick="results(this)"  value="5">5</button>
+                                    <button class="btn btn-default" onclick="results(this)"  value="6">6</button>
+                                    <button class="btn btn-default" onclick="resultsOper(this)" id="-" value="-">-</button>
+                                    <button class="btn btn-default" onclick="results(this)"  value="1">1</button>
+                                    <button class="btn btn-default" onclick="results(this)"  value="2">2</button>
+                                    <button class="btn btn-default" onclick="results(this)"  value="3">3</button>
+                                    <button class="btn btn-default" onclick="resultsOper(this)" id="+" value="+">+</button>
+                                    <button class="btn btn-default">null</button>
+                                    <button class="btn btn-default" onclick="results(this)"  value="0">0</button>
+                                    <button class="btn btn-default" onclick="dot(this)"  value=".">.</button>
+                                    <button class="btn btn-default" onclick="resultsEquel(this)" value="=">=
+                                    </button>
+                                </div>
+                                <!-- 数字键盘END -->
+                            </div>
+                            <!-- 内容END -->
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主容器END -->
+    <script src="js/colculataor.js"></script>
+</body>
+
+</html>

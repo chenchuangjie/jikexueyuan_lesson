@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>文件上传</title>
+    <script type="text/javascript">
+    /*读取图像的函数*/
+    function readAsDataURL() {
+        /*获取文件上传的第一张图片*/
+        var file = document.getElementById("file").files[0];
+        /*实例化对象*/
+        var reader = new FileReader();
+        /*读取图片的数据*/
+        reader.readAsDataURL(file);
+        /*显示图片*/
+        reader.onload = function(e) {
+            var resultimg = document.getElementById("result");
+            resultimg.innerHTML = '<img src="' + this.result + '"+alt="">';
+        }
+    }
+
+    /*读取文件文件*/
+    function readAsTest() {
+        /*获取文件上传的第一文本*/
+        var file = document.getElementById("file").files[0];
+        /*实例化对象*/
+        var reader = new FileReader();
+        /*读取文本的数据*/
+        reader.readAsText(file, "gb2312,UTF-8");
+        /*显示图片*/
+        reader.onload = function(e) {
+            var resultimg = document.getElementById("result");
+            resultimg.innerHTML = this.result;
+        }
+
+    }
+    </script>
+</head>
+
+<body>
+    <!-- 
+			5个对象：readAsBinaryString; 将文件读取为二进制编码
+			         readAsText			 将文件读取为文本
+			         readASDataURL       将文件读取为DataURL
+			         readArrayBuffer
+			         abort               终端读取操作(中断)
+			
+		 -->
+    <!-- 
+		 六个事件：onabort:中断触发
+		           onerror:出错触发
+		           onloadstart:开始触发
+		           onprogress:正在读取触发
+		           onload:成功读取触发
+		           onloadend:读取完成，无论成功失败都会触发
+		  -->
+    <p>
+        <label>轻选择一个文件</label>
+        <input type="file" id="file">
+        <input type="button" value="读取图像" onclick="readAsDataURL()">
+        <input type="button" value="读取二进制数据" onclick="">
+        <input type="button" value="读取读取文本文件" onclick="readAsTest()">
+    </p>
+    <div id="result" name="result">
+    </div>
+</body>
+
+</html>

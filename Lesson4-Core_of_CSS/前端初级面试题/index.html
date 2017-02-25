@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>初级前端面试题</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/autoc.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- 主容器 -->
+    <section class="page">
+        <!-- 头部 -->
+        <header class="header">
+            <h1 class="title" id="top">初级前端面试题</h1>
+            <ul class="meta">
+                <li>编写: 陈创杰</li>
+                <li>时间: 2016-12-06</li>
+            </ul>
+        </header>
+        <!-- 头部END -->
+        <!-- 中间内容 -->
+        <article class="article" id="article">
+            <h2>初级前端工程师掌握的技能</h2>
+            <p> 初级前端工程师应该具体的学习知识，要了解各种css的预处理器和后处理器， 还有会使用常见前端的MV*框架(angularjs, backbone，reactjs等等)并知道这些框架的原理，另外就是要熟练使用nodejs，要会使用基于node的各种前端构建工具 (grunt，gulp等等)，熟练使用github或gitlab，对模块化、组件化、工程化、语义化有一个比较深入的了解，最后要知道如何开发移动端 的页面，如何去优化一个页面的性能。</p>
+            <h2>HTML+CSS+JS面试题目</h2>
+            <h3>1.HTML是什么意思？</h3>
+            <div class="code">
+                <p>A)高级文本语言</p>
+                <p>B)超文本标记语言</p>
+                <p>C)扩展标记语言</p>
+                <p>D)图形化标记语言</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>超文本标记语言</b></p>
+                <p> 网页（WebPage）文件主要是用超文本标记语言（HyperText Markup Language，简称HTML）语句来写成。您可以通过IE浏览器的“查看”菜单中的“源文件”看到该页的HTML代码。HTML语言由一系列元素(element)组成，用于组织文件的内容和指导文件的输出格式。元素名称不分大小写。一个元素可以有多个属性，属性及其属性值不分大小写。属性名＝属性值合起来构成一个完整的属性，一个元素可以有多个属性，各个属性用空格分开。元素又由标记(tag)的构成，大多数标记是成对出现的，分起始标记
+                    < >(start tag)和结尾标记</ >(end tag)，以便和页面的内容区分开来。其写成的文件是标准的ASCII文件，不同于一般的编程语言，故称为脚本（Script）更准确一点。其实也很简单，特别是在专门的HTML编辑器的帮助下，您可以迅速地学会HTML，并能很快写出有自己特色的Homepage来。</p>
+            </details>
+            <h3>2.在页面中看不见的表单元素是那种？</h3>
+            <div class="code">
+                <p>A) &lt;input type="password"&gt; &lt;/input>
+                </p>
+                <p>B) &lt;input type="radio"&gt; &lt;/input>
+                </p>
+                <p>C) &lt;input type="hidden"&gt; &lt;/input>
+                </p>
+                <p>D) &lt;input type="reset"&gt; &lt;/input>
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;inputtype="hidden">&lt;/input></b></p>
+                <div>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>值</th>
+                                <th>描述</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>button</td>
+                                <td>定义可点击按钮（多数情况下，用于通过 JavaScript 启动脚本）。</td>
+                            </tr>
+                            <tr>
+                                <td>checkbox</td>
+                                <td>定义复选框。</td>
+                            </tr>
+                            <tr>
+                                <td>file</td>
+                                <td>定义输入字段和 "浏览"按钮，供文件上传。</td>
+                            </tr>
+                            <tr>
+                                <td>hidden</td>
+                                <td>定义隐藏的输入字段。</td>
+                            </tr>
+                            <tr>
+                                <td>image</td>
+                                <td>定义图像形式的提交按钮</td>
+                            </tr>
+                            <tr>
+                                <td>password</td>
+                                <td>定义密码字段。该字段中的字符被掩码。</td>
+                            </tr>
+                            <tr>
+                                <td>radio</td>
+                                <td>定义单选按钮。</td>
+                            </tr>
+                            <tr>
+                                <td>reset</td>
+                                <td>定义重置按钮。重置按钮会清除表单中的所有数据。</td>
+                            </tr>
+                            <tr>
+                                <td>submit</td>
+                                <td>定义提交按钮。提交按钮会把表单数据发送到服务器。</td>
+                            </tr>
+                            <tr>
+                                <td>text</td>
+                                <td>定义单行的输入字段，用户可在其中输入文本。默认宽度为 20 个字符。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+            <h3>3.我们在HTML页面中制作了一个图像，想要在鼠标指向这个图像时浮出一条提示信息，应该使用哪个参数做到？</h3>
+            <div class="code">
+                <p>A)POP</p>
+                <p>B)SRC</p>
+                <p>C)ALT</p>
+                <p>D)MSG</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>ALT</b></p>
+                <div>
+                    <h4>定义和用法</h4>
+                    <img src="image/1.jpg" alt="ALT的显示">
+                    <p>alt 属性是一个必需的属性，它规定在图像无法显示时的替代文本。</p>
+                    <p>假设由于下列原因用户无法查看图像，alt 属性可以为图像提供替代的信息：</p>
+                    <ul>
+                        <li>网速太慢</li>
+                        <li>src 属性中的错误</li>
+                        <li>浏览器禁用图像</li>
+                        <li>用户使用的是屏幕阅读器</li>
+                    </ul>
+                    <p>img标签的 alt 属性指定了替代文本，用于在图像无法显示或者用户禁用图像显示时，代替图像显示在浏览器中的内容。</p>
+                </div>
+            </details>
+            <h3>4.哪个标记用于表示HTML文档的结束？</h3>
+            <div class="code">
+                <p>A)/BODY</p>
+                <p>B)/HTML</p>
+                <p>C)/TABLE</p>
+                <p>D)/TITLE</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>/HTML</b></p>
+            </details>
+            <h3>5.META元素的作用是什么？</h3>
+            <div class="code">
+                <p>A)META元素用于表达HTML文档的格式</p>
+                <p>B)META元素用于指定关于HTML文档的信息</p>
+                <p>C)META元素用于实现本页的自动刷新</p>
+                <p>D)以上都不对</a>
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>META元素用于指定关于HTML文档的信息</b></p>
+                <div>
+                    <ol>
+                        <li>
+                            meta元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+                        </li>
+                        <li>meta标签位于文档的头部，不包含任何内容。
+                            <meta> 标签的属性定义了与文档相关联的名称/值对</li>
+                    </ol>
+                </div>
+            </details>
+            <h3>6.默认情况下，使用P标记会形成什么效果？</h3>
+            <div class="code">
+                <p>A)在文字P所在位置中加入8个空格</p>
+                <p>B)P后面的文字会变成粗体</p>
+                <p>C)开始新的一行</p>
+                <p>D)P后面的文字会变成斜体</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>开始新的一行</b></p>
+            </details>
+            <h3>7.以下的哪一种颜色格式支持上百万种颜色，但是不支持无损压缩？</h3>
+            <div class="code">
+                <p>A)bmp</p>
+                <p>B)jpg</p>
+                <p>C)gif</p>
+                <p>D)tif</p>
+            </div>
+            <p></p>
+            <details>
+                <summary>答案</summary>
+                <p><b>bmp </b></p>
+                <p>BMP是英文Bitmap（位图）的简写，它是Windows操作系统中的标准图像文件格式，能够被多种Windows应用程序所支持。随着Windows操作系统的流行与丰富的Windows应用程序的开发，BMP位图格式理所当然地被广泛应用。这种格式的特点是包含的图像信息较丰富，几乎不进行压缩，但由此导致了它与生俱生来的缺点--占用磁盘空间过大。所以，目前BMP在单机上比较流行。 </p>
+            </details>
+            <h3>8.哪一个标记用于使HTML文档中表格里的单元格在同行进行合并？</h3>
+            <div class="code">
+                <p>A)cellspacing</p>
+                <p>B)cellpadding</p>
+                <p>C)rowspan</p>
+                <p>D)colspan</p>
+            </div>
+            <details>
+                <summary>答案</summary>
+                <p><b>colspan</b></p>
+                <div>
+                    <ol>
+                        <li>colspan 属性规定单元格可横跨的列数。</li>
+                        <li>rowspan 属性规定单元格可横跨的行数。</li>
+                        <li>cellspacing 属性规定单元格之间的空间。</li>
+                        <li>cellpadding 属性规定单元边沿与其内容之间的空白。</li>
+                    </ol>
+                </div>
+            </details>
+            <h3>9.使用以下那一种元素可以将声音添加到网页里面？</h3>
+            <div class="code">
+                <p>A)sound</p>
+                <p>B)bgsound</p>
+                <p>C)music</p>
+                <p>D)voice</p>
+            </div>
+            <details>
+                <summary>答案</summary>
+                <p><b>bgsound</b></p>
+                <div>
+                    <p>当音频被包含在网页中，或作为网页的一部份，它就被称为内联音频。</p>
+                    <p>通过使用 bgsound 元素或 img 元素，可向网页添加内联音频。</p>
+                </div>
+            </details>
+            <h3>10.以下HTML代码中，哪一个是将词语“Run Away Bride”显示为Verdana字体并且字号为5号的正确代码？</h3>
+            <div class="code">
+                <p>A) &lt;font size=“5”font=“Verdana”>RunAway Bride &lt;/font&gt;
+                </p>
+                <p>B) &lt;font size=“5”face=“Verdana”>RunAway Bride &lt;font&gt;
+                </p>
+                <p>C) &lt;font size=5 font=Verdana>“Run Away Bride” &lt;/font&gt;
+                </p>
+                <p>D) &lt;font size=5 face=“Verdana”,text=“RunAway Bride”&lt;/font&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案</summary>
+                <p><b>&lt;font size=“5”face=“Verdana”>RunAway Bride&lt;/font&gt;</b></p>
+            </details>
+            <h3>11.在&lt;param&gt;标签中，下列哪个属性用于给参数传递内容？</h3>
+            <div class="code">
+                <p>A)Address</p>
+                <p>B)Value</p>
+                <p>C)Amount</p>
+                <p>D)Method</p>
+            </div>
+            <details>
+                <summary>答案</summary>
+                <p><b>Value</b></p>
+                <div>
+                    <p>value 属性为 input 元素设定值。</p>
+                    <ol>
+                        <li>type="button", "reset", "submit" - 定义按钮上的显示的文本</li>
+                        <li>type="text", "password", "hidden" - 定义输入字段的初始值</li>
+                        <li>type="checkbox", "radio", "image" - 定义与输入相关联的值</li>
+                    </ol>
+                </div>
+            </details>
+            <h3>12.超链接不能链接到下列哪个位置？</h3>
+            <div class="code">
+                <p>A)同一HTML文档内的位置</p>
+                <p>B)磁盘上其他HTML文档</p>
+                <p>C)Internet上HTML文档</p>
+                <p>D)计算机，你与它之间没有通信链路</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>计算机，你与它之间没有通信链路</b></p>
+            </details>
+            <h3>14.下列那项技术可以用于帮助网页设计时使页面具有统一、专业的外观？</h3>
+            <div class="code">
+                <p>A)HTML</p>
+                <p>B)DHTML</p>
+                <p>C)CSS</p>
+                <p>D)URL</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>CSS</b></p>
+            </details>
+            <h3>15.Window对象是代表Internet Explorer窗口的对象，其属性、方法和事件可以不经限定就可以直接使用。比如Window.Alert“stop”也可以直接写成：Alert“stop”这种说法是正确的还是错误的？</h3>
+            <div class="code">
+                <p>A)正确</p>
+                <p>B)错误</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>正确</b></p>
+                <p>没有区别，你就认为alert = window.alert没什么区别，如果有人觉得有区别，那就来解释一下所有以window.开始的东西，都可以直接把window省略，只是有些变成软件在你写了window.的时候会自动的出现window的方法，所以如果你记得住完全没必要写window。比如location.href = window.location.href</p>
+            </details>
+            <h3>16.浏览器针对于HTML文档起到了什么作用？</h3>
+            <div class="code">
+                <p>A)浏览器用于创建HTML文档</p>
+                <p>B)浏览器用于查看HTML文档</p>
+                <p>C)浏览器用于修改HTML文档</p>
+                <p>D)浏览器用于删除HTML文档</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>浏览器用于查看HTML文档</b></p>
+                <p>我们可以把浏览器看做是一个平台，浏览器的作用就是显示服务器解析后的网页文件内容。</p>
+            </details>
+            <h3>17.以下哪一个项目是用来访问web页的软件？</h3>
+            <div class="code">
+                <p>A)OutlookExpress</p>
+                <p>B)Internet Explorer</p>
+                <p>C)QQ</p>
+                <p>D)FTP</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>Internet Explorer</b></p>
+            </details>
+            <h3>18.哪条命令用于使一行文本折行，而不是插入一个新的段落？</h3>
+            <div class="code">
+                <p>A) &lt;TD&gt;
+                </p>
+                <p>B) &lt;P&gt;
+                </p>
+                <p>C) &lt;BR&gt;
+                </p>
+                <p>D) &lt;H1&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;BR&gt;</b></p>
+                <div>
+                    <p>br可插入一个简单的换行符。</p>
+                    <p>
+                        &lt;br&gt; 标签是空标签（意味着它没有结束标签，因此这是错误的： &lt;br&gt; &lt;/br&gt;）。在 XHTML 中，把结束标签放在开始标签中，也就是 &lt;br /&gt;。</p>
+                </div>
+            </details>
+            <h3>19.世界上最大的计算机网络是：</h3>
+            <div class="code">
+                <p>A)WWW</p>
+                <p>B)WAN</p>
+                <p>C)MAN</p>
+                <p>D)Internet</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>Internet</b></p>
+            </details>
+            <h3>20.下面关于HTML说法错误的是？</h3>
+            <div class="code">
+                <p>A)HTML是一种标记语言</p>
+                <p>B)HTML可以控制页面和内容的外观</p>
+                <p>C)HTML文档总是静态的</p>
+                <p>D)文档是超文本文档</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>HTML可以控制页面和内容的外观</b></p>
+            </details>
+            <h3>21.语句A：HTML文档必须包括“头”和“主体”两部分</h3>
+            <h3>&nbsp;&nbsp;语句B：HTML文档的扩展名为.htm或.html以下说法正确的是：</h3>
+            <div class="code">
+                <p>A)两句都对</p>
+                <p>B)两句都错</p>
+                <p>C)只有A对</p>
+                <p>D)只有B对</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>只有B对</b></p>
+                <p>1、.html与.htm均是静态网页后缀名，网页文件没有区别与区分，html与htm后缀网页后缀可以互换，对网页完全没有影响同时也没有区别。可以认为html与htm没有本质区别，唯一区别即多与少一个“L”。 2、定义：html,htm是一个完全的超文本静态网页——hypertext markup language shtml是一种用于SSI技术的文件——Server Side Include--SSI。 shtml是什么格式,比html有何好处? shtml,html格式是差不多，shtml主要可以使用include（包含html），经过服务器生成静态页面。 Shtml的页面可以使用include嵌入另外的html页面这样可以使得一个网站里共用相同办法分离出来使用include来嵌入到静态页面里。静态页面则不能。
+                </p>
+            </details>
+            <h3>22.以下哪个项目不是可以在HTML文档中使用的特殊字符。</h3>
+            <div class="code">
+                <p>A)></p>
+                <p>B)&tl;</p>
+                <p>C)©</p>
+                <p>D)</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&tl;</b></p>
+            </details>
+            <h3>23.Html标记中，哪个标记表示表格？</h3>
+            <div class="code">
+                <p>A) &lt;H1&gt;
+                </p>
+                <p>B) &lt;TD&gt;
+                </p>
+                <p>C) &lt;TABLE&gt;
+                </p>
+                <p>D) &lt;TAB&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;TABLE&gt;</b></p>
+            </details>
+            <h3>24.Html标记中，用什么方法可以将整个表格在页面中居中？</h3>
+            <div class="code">
+                <p>A)place=middle</p>
+                <p>B)type=middle</p>
+                <p>C)align=center</p>
+                <p>D)type=center</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>align=center</b></p>
+            </details>
+            <h3>25.我们想要让当前页面的背景色为蓝色，应该使用哪一句代码来描述此种设置？</h3>
+            <div class="code">
+                <p>A)bgcolor="blue"</p>
+                <p>B)bgground="blue"</p>
+                <p>C)backcolor="blue"</p>
+                <p>D)background="blue"</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>bgcolor="blue"</b></p>
+            </details>
+            <h3>27.我们想要让表格的边框在页面中一定不显示出来，用什么方法可以做到呢？</h3>
+            <div class="code">
+                <p>A)bgcolor="white"</p>
+                <p>B)bgcolor="null"</p>
+                <p>C))border="0"</p>
+                <p>D)bordercolor="white"</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>border="0"</b></p>
+            </details>
+            <h3>28.我们想要将表格的宽度设置为100个像素，应该怎么办？</h3>
+            <div class="code">
+                <p>A)width="100"</p>
+                <p>B)border="100"</p>
+                <p>C)length="100"</p>
+                <p>D)maxlength="100"</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>width="100"</b></p>
+            </details>
+            <h3>29.我们想要将表格中的文字放在靠上居中的位置，应该怎么办？</h3>
+            <div class="code">
+                <p>A)align="middle"align="top"</p>
+                <p>B)align="center"align="top"</p>
+                <p>C)valign="middle"align="top"</p>
+                <p>D)valign="top" align="center"</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>valign="top" align="center"</b></p>
+            </details>
+            <h3>30.我们想要为网页中的文字加上超链接，可以采用哪个标记达到要求？</h3>
+            <div class="code">
+                <p>A) &lt;LINK&gt;
+                </p>
+                <p>B) &lt;HREF&gt;
+                </p>
+                <p>C) &lt;A&gt;
+                </p>
+                <p>D) &lt;B&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;A&gt;</b></p>
+                <div>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>属性</th>
+                                <th>描述</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_charset.asp">charset</a></td>
+                                <td>规定被链接文档的字符集。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_coords.asp">coords</a></td>
+                                <td>规定链接的坐标。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_download.asp">download</a></td>
+                                <td>规定被下载的超链接目标。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_href.asp">href</a></td>
+                                <td>规定链接指向的页面的 URL。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_hreflang.asp">hreflang</a></td>
+                                <td>规定被链接文档的语言。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_media.asp">media</a></td>
+                                <td>规定被链接文档是为何种媒介/设备优化的。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_name.asp">name</a></td>
+                                <td>规定锚的名称。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_rel.asp">rel</a></td>
+                                <td>规定当前文档与被链接文档之间的关系。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_rev.asp">rev</a></td>
+                                <td>规定被链接文档与当前文档之间的关系。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_shape.asp">shape</a></td>
+                                <td>规定链接的形状。 20 个字符。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_target.asp">target</a></td>
+                                <td>规定在何处打开链接文档。</td>
+                            </tr>
+                            <tr>
+                                <td><a href="http://www.w3school.com.cn/tags/att_a_type.asp">type</a></td>
+                                <td>规定被链接文档的的 MIME 类型。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+            <h3>31.A文件夹与B文件夹是同级文件夹，其中A下有a.htm，B下有b.htm文件，现在我们希望在a.htm文件中创建超链接，链接到b.htm，应该在a.htm页面代码中如何描述链接内容？</h3>
+            <div class="code">
+                <p>A)b.htm</p>
+                <p>B)././././B/b.htm</p>
+                <p>C)../B/b.htm</p>
+                <p>D)../../b.htm</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>../B/b.htm</b></p>
+            </details>
+            <h3>32.我们想要在HTML文档中加入图像，可以使用哪个标记来达到要求呢？</h3>
+            <div class="code">
+                <p>A) &lt;PIC&gt;
+                </p>
+                <p>B) &lt;PICTURE&gt;
+                </p>
+                <p>C) &lt;IMG&gt;
+                </p>
+                <p>D) &lt;IMAGE&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;IMG&gt;</b></p>
+            </details>
+            <h3>33.我们发现为页面中的图像加入超链接后，默认情况下都带有一道黑框，有什么方法可以去掉它呢？</h3>
+            <div class="code">
+                <p>A)bordercolor="white" </p>
+                <p>B)border="0"</p>
+                <p>C)style="no border"</p>
+                <p>D)style="0"</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>border="0"</b></p>
+            </details>
+            <h3>34.我们想要将表格中加入的图像充满整个单元格，使用哪种方式可以做到？</h3>
+            <div class="code">
+                <p>A)size="100"</p>
+                <p>B)size="100%"</p>
+                <p>C)width="100"</p>
+                <p>D)width="100%"</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>width="100%"</b></p>
+            </details>
+            <h3>36.我们想要在框架中加入一个叫做list.htm的文件，应该在HTML中如何描述它？</h3>
+            <div class="code">
+                <p>A)frame page="list.htm"</p>
+                <p>B)frame target="list.htm"</p>
+                <p>C)frame src="list.htm"</p>
+                <p>D)frame framepage="list.htm"</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>framesrc="list.htm"</b></p>
+                <div>
+                    <p>frame 标签定义 frameset 中的一个特定的窗口（框架）。</p>
+                    <pre class="code">
+                    <code style="color: #000;">
+&lt;frameset cols="25%,50%,25%"&gt;
+   &lt;frame src="/example/html/frame_a.html"&gt;
+   &lt;frame src="/example/html/frame_b.html"&gt;
+   &lt;frame src="/example/html/frame_c.html"&gt;
+&lt;/frameset&gt;
+                    </code>
+                    </pre>
+                    <img src="image/2.jpg" alt="frame">
+                </div>
+            </details>
+            <h3>37.我们想要在页面中加入一个层，可以使用哪些HTML标记来描述它？(选择2项)</h3>
+            <div class="code">
+                <p>A) &lt;floor&gt;
+                </p>
+                <p>B) &lt;div&gt;
+                </p>
+                <p>C)) &lt;span&gt;
+                </p>
+                <p>D) &lt;level&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;div&gt;</b></p>
+            </details>
+            <h3>38. 下面语句表述正确的是</h3>
+            <div class="code">
+                <p>A)marginwidth=5表示框架宽度部分边缘所保留的空间。</p>
+                <p>B)marginwidth=5表示框架宽度空间</p>
+                <p>C)noresize是设定不用使用框框的大小</p>
+                <p>D)noresize是使用者设定此参数后，可随意地拉动框架改变其大小。</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>marginwidth=5表示框架宽度部分边缘所保留的空间。</b></p>
+                <div>
+                    <ol>
+                        <li>marginwidth 属性规定框架内容与框架的左侧和右侧之间的高度，以像素计。</li>
+                        <li>
+                            <p>noresize 属性规定用户无法调整框架的大小。</p>
+                            <p>默认地，可以通过拖动框架之间的“墙壁”来改变框架的大小，该属性可以锁定框架的大小。</p>
+                        </li>
+                    </ol>
+                </div>
+            </details>
+            <h3>39. 不是表单提供给用户的输入形式是</h3>
+            <div class="code">
+                <p>A)Text</p>
+                <p>B)Radio</p>
+                <p>C)Type</p>
+                <p>D)file</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>Type</b></p>
+            </details>
+            <h3>40 . 下列哪种CSS样式定义的方式拥有最高的优先级？</h3>
+            <div class="code">
+                <p>A)嵌入</p>
+                <p>B)行内</p>
+                <p>C)链接</p>
+                <p>D)导入</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>行内</b></p>
+                <div>
+                    <p>important > 内联 > ID > 类 > 标签/伪类/属性选择 > 伪对象 > 继承 > 通配符</p>
+                </div>
+            </details>
+            <h3>41 .web标准的制定者是？</h3>
+            <div class="code">
+                <p>A)微软</p>
+                <p>B)万维网联盟（W3C）</p>
+                <p>C)网景公司（Netscape）</p>
+                <p>D)SUN公司</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>万维网联盟（W3C）</b></p>
+            </details>
+            <h3>42 . 下列的HTML中哪个是最大的标题？</h3>
+            <div class="code">
+                <p>A) &lt;h6&gt;
+                </p>
+                <p>B) &lt;head&gt;
+                </p>
+                <p>C) &lt;heading&gt;
+                </p>
+                <p>D) &lt;h1&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;h1&gt;</b></p>
+            </details>
+            <h3>43 . 下列的HTML中哪个可以插入一条水平线？</h3>
+            <div class="code">
+                <p>A) &lt;br&gt;
+                </p>
+                <p>B) &lt;hr&gt;
+                </p>
+                <p>C) &lt;break&gt;
+                </p>
+                <p>D) &lt;P&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;hr&gt;</b></p>
+            </details>
+            <h3> 44 . 下列的HTML中哪个可以添加背景颜色？</h3>
+            <div class="code">
+                <p>A) &lt;body color="yellow"&gt;
+                </p>
+                <p>B) &lt;background>yellow
+                    </background>
+                </p>
+                <p>C) &lt;body bgcolor="yellow"&gt;
+                </p>
+                <p>D) &lt;body backcolor="yellow"&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;body bgcolor="yellow"&gt;</b></p>
+            </details>
+            <h3> 45 . 请选择产生粗体字的HTML标签：</h3>
+            <div class="code">
+                <p>A) &lt;bold&gt;
+                </p>
+                <p>B) &lt;bb&gt;
+                </p>
+                <p>C) &lt;b&gt;
+                </p>
+                <p>D) &lt;bld&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;b&gt;文本加粗</b></p>
+            </details>
+            <h3> 46 . 请选择产生斜体字的HTML标签：</h3>
+            <div class="code">
+                <p>A) &lt;i&gt;
+                </p>
+                <p>B) &lt;italics&gt;
+                </p>
+                <p>C) &lt;ii&gt;
+                </p>
+                <p>D) &lt;it&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;i&gt;标签显示斜体文本效果。</b></p>
+            </details>
+            <h3> 47 . 下列的HTML中哪个可以产生超链接？</h3>
+            <div class="code">
+                <p>A) &lt;aurl="http://www.w3schools.com">W3Schools.com &lt;/a&gt;
+                </p>
+                <p>B) &lt;a&gt;http://www.w3schools.com &lt;/a&gt;
+                </p>
+                <p>C) &lt;a href="http://www.w3schools.com"&gt;W3Schools &lt;/a&gt;
+                </p>
+                <p>D) &lt;a&gt;http://www.w3schools.com &lt;/a&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;a href="http://www.w3schools.com"&gt;W3Schools&lt;/a&gt;</b></p>
+            </details>
+            <h3>48 . 如何制作电子邮件链接？</h3>
+            <div class="code">
+                <p>A) &lt;a href="xxx@yyy"&gt;</p>
+                <p>B) &lt;mail href="xxx@yyy"&gt;
+                </p>
+                <p>C) &lt;a href="mailto:xxx@yyy"&gt;</p>
+                <p>D) &lt;mail&gt;xxx@yyy&lt;/ mail&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;a href="mailto:xxx@yyy"&gt;</b></p>
+            </details>
+            <h3>49 . 如何在新窗口打开链接？</h3>
+            <div class="code">
+                <p>A) &lt;a href="url" new&gt;</p>
+                <p>B) &lt;a href="url" target="_blank"&gt;</p>
+                <p>C) &lt;a href="url" target="new"&gt;</p>
+                <p>D) &lt;a href="url" target="_parent"&gt;</p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;a href="url" target="_blank"&gt;</b></p>
+            </details>
+            <h3> 50 .以下选项中，哪个全部都是表格标签？</h3>
+            <div class="code">
+                <p>A) &lt;table&gt; &lt;head&gt; &lt;tfoot&gt;
+                </p>
+                <p>B) &lt;table&gt; &lt;tr&gt; &lt;td&gt;
+                </p>
+                <p>C) &lt;table&gt; &lt;tr&gt; &lt;tt&gt;
+                </p>
+                <p>D) &lt;thead&gt; &lt;body&gt; &lt;tr&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;table&gt;&lt;tr&gt;&lt;td&gt;</b></p>
+            </details>
+            <h3>51 . 请选择可以使单元格中的内容进行左排列的正确HTML标签：</h3>
+            <div class="code">
+                <p>
+                    A) &lt;td align="left"&gt;
+                </p>
+                <p>
+                    B) &lt;td valign="left"&gt;
+                </p>
+                <p>
+                    C) &lt;td leftalign&gt;
+                </p>
+                <p>
+                    D) &lt;tdleft&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;td align="left"&gt;</b></p>
+            </details>
+            <h3>52 . 如何产生带有数字列表符号的列表？</h3>
+            <div class="code">
+                <p>A) &lt;ul&gt;
+                </p>
+                <p>B) &lt;dl&gt;
+                </p>
+                <p>C) &lt;ol&gt;
+                </p>
+                <p>D) &lt;list&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;ol&gt;</b></p>
+            </details>
+            <h3> 53 . 如何产生带有圆点列表符号的列表？</h3>
+            <div class="code">
+                <p>A) &lt;dl&gt;
+                </p>
+                <p>B) &lt;list&gt;
+                </p>
+                <p>C) &lt;ol&gt;
+                </p>
+                <p>D) &lt;ul&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;ul&gt;</b></p>
+            </details>
+            <h3> 54 . 下列的HTML中哪个可以产生复选框？</h3>
+            <div class="code">
+                <p>A) &lt;input type="check"&gt;
+                </p>
+                <p>B) &lt;checkbox&gt;
+                </p>
+                <p>C) &lt;input type="checkbox"&gt;
+                </p>
+                <p>D) &lt;check&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;input type="checkbox"&gt;</b></p>
+            </details>
+            <h3>55 . 下列的HTML中哪个可以产生文本框？</h3>
+            <div class="code">
+                <p>A) &lt;input type="textfield"&gt;
+                </p>
+                <p>B) &lt;textinput type="text"&gt;
+                </p>
+                <p>C) &lt;input type="text"&gt;
+                </p>
+                <p>D) &lt;textfield&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;input type="text"&gt;</b></p>
+            </details>
+            <h3>56 . 下列的HTML中哪个可以产生下拉列表？</h3>
+            <div class="code">
+                <p>A) &lt;list&gt;
+                </p>
+                <p>B) &lt;input type="list"&gt;
+                </p>
+                <p>C) &lt;input type="dropdown"&gt;
+                </p>
+                <p>D) &lt;select&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;select&gt;</b></p>
+            </details>
+            <h3>57 . 下列的HTML中哪个可以产生文本区？</h3>
+            <div class="code">
+                <p>A) &lt;textarea&gt;
+                </p>
+                <p>B) &lt;input type="textarea"&gt;
+                </p>
+                <p>C) &lt;input type="textbox"&gt;
+                </p>
+                <p>D) &lt;textarea> &lt;/textarea&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b> &lt;textarea&gt;&lt;/textarea&gt;</b></p>
+            </details>
+            <h3>58 . 下列的HTML中哪个可以插入图像？</h3>
+            <div class="code">
+                <p>A) &lt;img href="image.gif&gt;</p>
+                <p>B) &lt;image src=" image.gif "&gt;</p>
+                <p>C) &lt;img src="image.gif "&gt;</p>
+                <p>D) &lt;img>image.gif&lt;/img&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b>&lt;img>image.gif&lt;/img&gt;</b></p>
+            </details>
+            <h3>60 . 以下的HTML中，哪个是正确引用外部样式表的方法？</h3>
+            <div class="code ">
+                <p>A) &lt;style src="mystyle.css "&gt;</p>
+                <p>B) &lt;link rel="stylesheet " type="text/css "href="mystyle.css "&gt;</p>
+                <p>C) &lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;
+                </p>
+            </div>
+            <details>
+                <summary>答案：</summary>
+                <p><b> &lt;link rel="stylesheet " type="text/css "href="mystyle.css "&gt;</b></p>
+            </details>
+            <h2>感谢您 测试完成</h2>
+        </article>
+        <!-- 中间内容END -->
+        <!-- 底部 -->
+        <footer class="copyright ">
+            <p><i class="toc-icon "></i>Copyright &copy; 2016 <a href="http://www.jikexueyuan.com/ ">极客学院WEB题库</a>, WEB初级前端工程师.</p>
+        </footer>
+        <!-- 底部END -->
+    </section>
+    <!-- 主容器 -->
+</body>
+<script type="text/javascript " src="js/jquery.js "></script>
+<script type="text/javascript " src="js/autoc.js "></script>
+<script type="text/javascript ">
+// jquery 插件
+$('#article').autoc();
+</script>
+
+</html>

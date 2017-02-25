@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 因为要做手机页面，我们要设置视口 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <title>百度新闻</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="cf">
+            <!--百度LOGO -->
+            <a href="https://m.baidu.com/" class="logo">
+                <span class="iconfont">&#xe7df;</span>
+            </a>
+            <!--用户LOGO -->
+            <a href="http://m.news.baidu.com/news?fr=mohome&ssid=771cbafdcdbfd0a1cdbd43434a6034&from=844b&uid=&pu=sz%40320_1001%2Cta%40iphone_2_5.0_3_537&bd_page_type=1#/profile/home?_k=0ehahp" class="user">
+                <span class="iconfont">&#xe625;</span>
+            </a>
+            <!-- 更多资讯 -->
+            <a href="#" class="more">
+                <span class="iconfont">&#xe626;</span>
+            </a>
+            <!-- 更多资讯 -->
+            <!-- 热点搜索 -->
+            <a href="http://localhost/project/baiduNew//sounews.html" class="search">
+                <span class="iconfont">&#xe601;</span>
+            </a>
+            <!-- 热点搜索END -->
+        </header>
+        <!-- 导航 -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">精选</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#">百家</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#">本地</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#">图片</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#">娱乐</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#">社会</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#">军事</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#">女人</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#">搞笑</a>
+                    <i></i>
+                </li>
+                <li>
+                    <a href="#">互联网</a>
+                    <i></i>
+                </li>
+                <li id="many">
+                    <a href="#">更多</a>
+                    <i></i>
+                </li>
+            </ul>
+        </nav>
+        <!-- 导航END -->
+        <!-- 大窗口 -->
+        <div class="sbody">
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="swiper">
+                    <div class="swiper-slide">
+                        <!-- <a href="#">
+                            <img src="img/4.jpg">
+                            <p class="txt">
+                                <span>美国联邦法官裁决暂停入境限制令</span>
+                            </p>
+                        </a> -->
+                    </div>
+                    <div class="swiper-slide">
+                    </div>
+                    <div class="swiper-slide">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-stypt" style="text-align: right; margin-bottom: -10px">
+                </div>
+            </div>
+        </div>
+        <!-- 大窗口END -->
+        <article class="news-main">
+            <!-- 这里自动添加新闻 -->
+            <ul class="news-lists">
+                <!--  <li class="news-list">
+              <div class="newsimg">
+                  <img src="img/xidada.jpg" alt="习大大" width="100%">
+              </div>
+              <div class="newscontent">
+                  <h1>习近平出席世界经济论坛并发表主旨演讲</h1>
+                  <p>
+                      <span class="newstime">2017年1月10日</span>
+                      <span class="newssrc">搜狐财经</span>
+                  </p>
+              </div>
+          </li> -->
+            </ul>
+        </article>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/news.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>申请磁盘</title>
+    <script>
+    function getSize() {
+        /*获取输入磁盘的内容*/
+        var size = document.getElementById("capacity").value;
+        window.webkitStorageInfo.requestQuota(PERSISTENT, size, function(grantdBytes) {
+            var text = "申请磁盘成功";
+            var strBtyes, intBytes;
+            /*3G*/
+            if (grantdBytes >= 1024 * 1024 * 1024) {
+                intBytes = Math.floor(grantdBytes / (1024 * 1024 * 1024));
+                text += intBytes + "GB";
+                grantdBytes = grantdBytes * (1024 * 1024 * 1024);
+            }
+            if (grantdBytes >= 1024 * 1024) {
+                intBytes = Math.floor(grantdBytes / (1024 * 1024));
+                text += intBytes + "GB";
+                grantdBytes = grantdBytes * (1024 * 1024);
+            }
+            if (grantdBytes >= 1024) {
+                intBytes = Math.floor(grantdBytes / (1024));
+                text += intBytes + "GB";
+                grantdBytes = grantdBytes * (1024);
+            }
+            text+=grantdBytes+"bytes";
+            document.getElementById("result").innerHTML = text;
+        })
+    }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="capacity" value="1024">
+        <input type="button" value="申请配额" onclick="getSize()">
+    </form>
+    <output id="result"></output>
+</body>
+
+</html>
