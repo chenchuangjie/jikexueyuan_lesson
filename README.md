@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-
+</head>
     <body>
         <h1>极客学院Web大前端课程作业</h1>
         <blockquote>
